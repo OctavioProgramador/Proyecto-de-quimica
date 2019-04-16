@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>110</y>
+      <w>720</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Pregunta
+--
+-respuestaCorrecta: string 
+-respuestaFalsa1: string 
+-respuestaFalsa2: string 
+-respuestaFalsa3 string 
+--
++Imprimir(string respuestaCorrecta, string respuestaFalsa1, string respuestaFalsa2, string respuestaFalsa3 );
++Responder(string respuesta): int
++Imprimir(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>120</y>
+      <w>270</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Test
+--
+-preguntas: List&lt;Pregunta&gt;
+-jugador: Usuario
+--
++Inciar(): void
++IngresarNombreDeUsuario(): void
++HacerPreguntas():void
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>370</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Usuario
+--
+-nombre: string
+-puntuacion: int
+--
++Usuario()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>370</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Juego
+--
+-tablaDePuntaje: TablaDePuntaje 
+-test: Test
+--
++Iniciar()
++Juego()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>370</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TablaDePuntaje
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
