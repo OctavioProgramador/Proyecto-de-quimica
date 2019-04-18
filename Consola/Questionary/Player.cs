@@ -2,10 +2,15 @@ using System;
 
 namespace Questionary
 {
-    struct Player: IComparable
+    class Player: IComparable
     {
         public String Name;
         public int Score;
+        public Player(string name, int score)
+        {
+            Name = name;
+            Score = score;
+        }
 
         public int CompareTo(object obj)
         {

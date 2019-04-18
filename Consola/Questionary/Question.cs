@@ -12,8 +12,6 @@ namespace Questionary
         public string WrongAnswer2{get; set;}
         public string WrongAnswer3{get; set;}
         private string[] posibleAnswer;
-        private int[] randomIndex;
-        private Random random;
 
         //Constructor
         public Question(string questionText,string correctAnswer,string wrongAnswer1, string wrongAnswer2, string wrongAnswer3)
@@ -22,8 +20,7 @@ namespace Questionary
             CorrectAnswer = correctAnswer;
             WrongAnswer1 = wrongAnswer1;
             WrongAnswer2 = wrongAnswer2;
-            WrongAnswer3 = wrongAnswer3;
-            random = new Random();
+            WrongAnswer3 = wrongAnswer3;     
             posibleAnswer = new string[4]
             {
                 CorrectAnswer,
@@ -31,14 +28,7 @@ namespace Questionary
                 WrongAnswer2,
                 WrongAnswer3
             };
-            randomIndex = new int[4]
-            {
-                random.Next(4),
-                random.Next(4),
-                random.Next(4),
-                random.Next(4),            
-            };
-            Array.Sort(randomIndex,posibleAnswer);
+            SortTheAnswersRandomly(); 
         }
 
         //Methods
@@ -60,6 +50,18 @@ namespace Questionary
                 System.Console.WriteLine("Error, wrong answer");
                 return 0;
             }
+        }
+        public void SortTheAnswersRandomly()
+        {
+            Random random = new Random();
+            int[] randomIndex = new int[4]
+            {
+                random.Next(4),
+                random.Next(4),
+                random.Next(4),
+                random.Next(4),            
+            };
+            Array.Sort(randomIndex,posibleAnswer);
         }
     }
 }
