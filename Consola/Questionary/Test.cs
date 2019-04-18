@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Questionary
@@ -6,26 +7,37 @@ namespace Questionary
     class Test
     {
         //Fields
-        private List<Question> questions;
+        private Question[] questions;
         private Player currentlyPlayer;
+        private int[] indexArray;
+        private Random rndIndex;
 
         //Constructor
         public Test()
         {
+            rndIndex = new Random();
             currentlyPlayer = new Player();
-            questions = new List<Question>()
+            questions = new Question[]
             {
                 new Question("2+2","4","2","3","5"),
                 new Question("2*2","4","2","3","5"),
-                new Question("2-2","0","2","3","5"),
+                new Question("2-2","0","2","3","5")
             };
+            indexArray = new int[] 
+            {
+                rndIndex.Next(3),
+                rndIndex.Next(3),
+                rndIndex.Next(3)  
+            };
+            Array.Sort(indexArray,questions);
         }
 
         //Methods
-        public void Start()
+        public Player Start()
         {
             AsingPlayerName();
             DoQuestions();
+            return currentlyPlayer;
         }
         public void AsingPlayerName()
         {
