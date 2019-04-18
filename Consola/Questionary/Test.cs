@@ -49,7 +49,8 @@ namespace Questionary
             foreach(var question in questions)
             {
                 Console.WriteLine(question.ToString());
-                currentlyPlayer.Score = question.Reply();
+                currentlyPlayer.Score +=
+                question.Reply();
             }
         }
 

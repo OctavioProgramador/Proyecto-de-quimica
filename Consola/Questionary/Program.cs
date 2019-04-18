@@ -6,8 +6,8 @@ namespace Questionary
     {
         static void Main(string[] args)
         {
-            Test test = new Test();
-            test.Start();
+            Game newGame = new Game();
+            newGame.Start();
         }
     }
 }

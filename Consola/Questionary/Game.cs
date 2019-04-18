@@ -33,7 +33,10 @@ namespace Questionary
                 break;
                 case 2:
                     Console.Clear();    
-                    
+                    scoreTable.Print();
+                    Console.ReadLine();
+                    Console.Clear();
+                    Start();
                 break;    
                 case 3:
                 break;                   
