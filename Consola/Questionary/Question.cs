@@ -1,9 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace Questionary
 {
-    class Question
+    [Serializable()]
+    public class Question: ISerializable
     {
         //Properties
         public string QuestionText {get; set;}
@@ -11,6 +15,7 @@ namespace Questionary
         public string WrongAnswer1{get; set;}
         public string WrongAnswer2{get; set;}
         public string WrongAnswer3{get; set;}
+        [NonSerialized()]
         private string[] posibleAnswer;
 
         //Constructor
@@ -62,6 +67,50 @@ namespace Questionary
                 random.Next(4),            
             };
             Array.Sort(randomIndex,posibleAnswer);
+        }
+
+        //Serialize
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("QuestionText",QuestionText);            
+            info.AddValue("CorrectAnswer",CorrectAnswer);
+            info.AddValue("WrongAnswer1",WrongAnswer1);
+            info.AddValue("WrongAnswer2",WrongAnswer2);
+            info.AddValue("WrongAnswer3",WrongAnswer3);
+        }
+        //Deserialize
+        public Question(SerializationInfo info, StreamingContext ctxt)
+        {
+            QuestionText = (string)info.GetValue("QuestionText",typeof(string));
+            CorrectAnswer = (string)info.GetValue("CorrectAnswer",typeof(string));
+            WrongAnswer1 = (string)info.GetValue("WrongAnswer1",typeof(string));
+            WrongAnswer2 = (string)info.GetValue("WrongAnswer2",typeof(string));
+            WrongAnswer3 = (string)info.GetValue("WrongAnswer3",typeof(string));
+            posibleAnswer = new string[4]
+            {
+                CorrectAnswer,
+                WrongAnswer1,
+                WrongAnswer2,
+                WrongAnswer3
+            };
+            SortTheAnswersRandomly();             
+        }
+        public Question()
+        {
+            QuestionText = "1"; 
+            CorrectAnswer = "1"; 
+            WrongAnswer1 = "1"; 
+            WrongAnswer2 = "1"; 
+            WrongAnswer3 = "1"; 
+                
+            posibleAnswer = new string[4]
+            {
+                CorrectAnswer,
+                WrongAnswer1,
+                WrongAnswer2,
+                WrongAnswer3
+            };
+            SortTheAnswersRandomly(); 
         }
     }
 }

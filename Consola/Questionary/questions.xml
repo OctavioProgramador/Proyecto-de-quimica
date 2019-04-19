@@ -1,0 +1,25 @@
+
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <QuestionText>2+2</QuestionText>
+    <CorrectAnswer>4</CorrectAnswer>
+    <WrongAnswer1>2</WrongAnswer1>
+    <WrongAnswer2>3</WrongAnswer2>
+    <WrongAnswer3>5</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>2*2</QuestionText>
+    <CorrectAnswer>4</CorrectAnswer>
+    <WrongAnswer1>2</WrongAnswer1>
+    <WrongAnswer2>3</WrongAnswer2>
+    <WrongAnswer3>5</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>2-2</QuestionText>
+    <CorrectAnswer>0</CorrectAnswer>
+    <WrongAnswer1>2</WrongAnswer1>
+    <WrongAnswer2>3</WrongAnswer2>
+    <WrongAnswer3>5</WrongAnswer3>
+  </Question>
+</ArrayOfQuestion>
