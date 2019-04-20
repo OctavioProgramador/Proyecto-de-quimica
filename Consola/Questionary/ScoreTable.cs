@@ -23,7 +23,7 @@ namespace Questionary
 
         public void Print()
         {
-     
+            Deserialize();
             foreach (Player player in record)
             {
               Console.WriteLine(player.ToString());
