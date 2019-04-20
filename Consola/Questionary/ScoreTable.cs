@@ -18,17 +18,21 @@ namespace Questionary
         public ScoreTable()
         {
             rute = Directory.GetCurrentDirectory() + @"\playerScore.xml";
-            record = new List<Player>();    
+            record = new List<Player>();   
+            if(File.Exists(rute))
+            {
+                Deserialize();
+            }
         }
 
         public void Print()
         {
-            Deserialize();
+            
             foreach (Player player in record)
             {
               Console.WriteLine(player.ToString());
             }
-            Serialize();
+            
         }
 
         public void AddPuntuation(Player newPuntuation)
@@ -41,7 +45,7 @@ namespace Questionary
             {
                     record.Remove(record[15]);
             }
-                
+             Serialize();
         }
 
         public void Deserialize()

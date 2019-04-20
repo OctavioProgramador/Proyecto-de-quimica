@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Player>
+    <Name>asdf</Name>
+    <Score>0</Score>
+  </Player>
+  <Player>
+    <Name>asasasasa</Name>
+    <Score>69</Score>
+  </Player>
+  <Player>
+    <Name>XDDDD</Name>
+    <Score>666</Score>
+  </Player>
+</ArrayOfPlayer>
