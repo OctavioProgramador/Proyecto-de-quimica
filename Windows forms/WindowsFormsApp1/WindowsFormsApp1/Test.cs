@@ -41,18 +41,24 @@ namespace WindowsFormsApp1
     
         public void EnterQuestions()
         {
+            /*
             if (File.Exists(rute))
             {
                 Deserialize();
             }
+            
             else
             {
+            */
                 questions = new List<Question>()
                 {
-                    new Question("2+2","4","2","3","5"),
+                    new Question("Óxido de nitrogeno III","NO3","Fe2S3","SiO","SiO2"),
+                    new Question("Óxido arsenoso","As2O3","As2O5","As2O4","Br2O5"),
+                    new Question("Óxido brómico","Br2O5","Br2O3","Br2O","Br2O7"),
                 };
-                Serialize();
-            }
+               /*Serialize();
+               
+            }*/
         }
 
         //Deserealize

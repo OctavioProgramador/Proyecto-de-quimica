@@ -11,13 +11,14 @@ namespace WindowsFormsApp1
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        /// 
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.SetCompatibleTextRenderingDefault(false);     
+            Application.Run(new MenuPrincipal());
+            //Application.Run(new FormJuego());
 
 
             

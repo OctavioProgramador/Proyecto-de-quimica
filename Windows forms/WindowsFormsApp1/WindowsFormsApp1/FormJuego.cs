@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class FormJuego : Form
     {
          Test newTest;
         public List<Question> questions;
-        public Form1()
+        public FormJuego()        
         {
             InitializeComponent();
 
@@ -115,6 +115,9 @@ namespace WindowsFormsApp1
                 timer1.Stop();
                 MessageBox.Show("tu puntuacion fue " + puntotal);
                 this.Close();
+                MenuPrincipal menu = new MenuPrincipal();
+                menu.Show();
+                
             }
 
             if (conteo <1)
