@@ -6,7 +6,7 @@ using System.Xml;
 
 namespace Questionary
 {
-    [Serializable()]
+
     public class Question: ISerializable
     {
         //Properties
@@ -15,7 +15,6 @@ namespace Questionary
         public string WrongAnswer1{get; set;}
         public string WrongAnswer2{get; set;}
         public string WrongAnswer3{get; set;}
-        [NonSerialized()]
         private string[] posibleAnswer;
 
         //Constructor
@@ -97,11 +96,11 @@ namespace Questionary
         }
         public Question()
         {
-            QuestionText = "1"; 
-            CorrectAnswer = "1"; 
-            WrongAnswer1 = "1"; 
-            WrongAnswer2 = "1"; 
-            WrongAnswer3 = "1"; 
+            QuestionText = "2"; 
+            CorrectAnswer = "3"; 
+            WrongAnswer1 = "4"; 
+            WrongAnswer2 = "5"; 
+            WrongAnswer3 = "4"; 
                 
             posibleAnswer = new string[4]
             {
