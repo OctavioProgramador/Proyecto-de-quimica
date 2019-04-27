@@ -6,16 +6,16 @@ using System.Xml;
 
 namespace Questionary2
 {
-    [Serializable()]
+
     public class Question: ISerializable
     {
         //Properties
-        public string QuestionText {get; set;}
-        public string CorrectAnswer {get; set;}
-        public string WrongAnswer1{get; set;}
-        public string WrongAnswer2{get; set;}
-        public string WrongAnswer3{get; set;}
-        [NonSerialized()]
+        public string QuestionText { get; set; }
+        public string CorrectAnswer { get; set; }
+        public string WrongAnswer1 { get; set; }
+        public string WrongAnswer2 { get; set; }
+        public string WrongAnswer3 { get; set; }
+
         private string[] posibleAnswer;
 
         //Constructor
@@ -26,14 +26,6 @@ namespace Questionary2
             WrongAnswer1 = wrongAnswer1;
             WrongAnswer2 = wrongAnswer2;
             WrongAnswer3 = wrongAnswer3;     
-            posibleAnswer = new string[4]
-            {
-                CorrectAnswer,
-                WrongAnswer1,
-                WrongAnswer2,
-                WrongAnswer3
-            };
-            SortTheAnswersRandomly(); 
         }
 
         //Methods
@@ -79,21 +71,13 @@ namespace Questionary2
             info.AddValue("WrongAnswer3",WrongAnswer3);
         }
         //Deserialize
-        public Question(SerializationInfo info, StreamingContext ctxt)
+        public Question(SerializationInfo info, StreamingContext context)
         {
             QuestionText = (string)info.GetValue("QuestionText",typeof(string));
             CorrectAnswer = (string)info.GetValue("CorrectAnswer",typeof(string));
             WrongAnswer1 = (string)info.GetValue("WrongAnswer1",typeof(string));
             WrongAnswer2 = (string)info.GetValue("WrongAnswer2",typeof(string));
             WrongAnswer3 = (string)info.GetValue("WrongAnswer3",typeof(string));
-            posibleAnswer = new string[4]
-            {
-                CorrectAnswer,
-                WrongAnswer1,
-                WrongAnswer2,
-                WrongAnswer3
-            };
-            SortTheAnswersRandomly();             
         }
         public Question()
         {
@@ -101,8 +85,10 @@ namespace Questionary2
             CorrectAnswer = "1"; 
             WrongAnswer1 = "1"; 
             WrongAnswer2 = "1"; 
-            WrongAnswer3 = "1"; 
-                
+            WrongAnswer3 = "1";                        
+        }
+        public void CreatePosibleAnswer()
+        {
             posibleAnswer = new string[4]
             {
                 CorrectAnswer,
@@ -110,7 +96,7 @@ namespace Questionary2
                 WrongAnswer2,
                 WrongAnswer3
             };
-            SortTheAnswersRandomly(); 
+            SortTheAnswersRandomly();
         }
     }
 }

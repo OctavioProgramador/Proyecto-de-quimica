@@ -74,15 +74,19 @@ namespace Questionary2
                 };
                 Serialize();
             }
+           foreach(Question q in questions)
+            {
+                q.CreatePosibleAnswer();
+            }
         }
 
         //Deserealize
         public void Deserialize()
         {
-            using (FileStream fs = File.OpenRead(rute))
+            using (FileStream fs2 = File.OpenRead(rute))
             {  
                 XmlSerializer serializer = new XmlSerializer(typeof(Question[]));
-                questions = (Question[])serializer.Deserialize(fs);
+                questions = (Question[])serializer.Deserialize(fs2);
             }
         }
          public void Serialize()

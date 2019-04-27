@@ -40,7 +40,8 @@ namespace Questionary2
                 
             record.Add(newPuntuation);
             record.Sort();
-      
+            record.Reverse();
+
             if (record.Count > 15)
             {
                     record.Remove(record[15]);
@@ -59,7 +60,7 @@ namespace Questionary2
 
         public void Serialize()
         {
-            using (TextWriter fs = new StreamWriter(rute))
+            using (Stream fs = new FileStream(rute, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Player>));
                 serializer.Serialize(fs, record);
