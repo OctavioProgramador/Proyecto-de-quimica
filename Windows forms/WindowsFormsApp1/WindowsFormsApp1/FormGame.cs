@@ -12,13 +12,20 @@ namespace WindowsFormsApp1
 {
     public partial class FormGame : Form
     {
-         Test newTest;
+        ScoreTable scoreTable;
+        string namePlayer;
+        Test newTest= new Test();
         public List<Question> questions;
         public FormGame()
         {
             InitializeComponent();
-
-            newTest = new Test();
+        }
+        public FormGame(string name)
+        {
+            InitializeComponent();
+            scoreTable = new ScoreTable();
+            namePlayer = name;
+            //newTest = new Test();
             /*
             questions = new List<Question>();
             questions.Add(new Question("2+2", "4", "2", "3", "5"));
@@ -79,10 +86,11 @@ namespace WindowsFormsApp1
            // timer1.Stop();
         }
 
-        private void Llenar() {
+        public void Llenar() {
 
             Random rnd = new Random();
-            int randomIndex = rnd.Next(0, newTest.questions.Count<Question>());
+            
+            int randomIndex = rnd.Next(0, newTest.questions.Count);
             labelQuestion.Text = newTest.questions[randomIndex].QuestionText;
             buttonOption1.Text = newTest.questions[randomIndex].GetPosibleAnswer(0);
             buttonOption2.Text = newTest.questions[randomIndex].GetPosibleAnswer(1);
@@ -114,6 +122,7 @@ namespace WindowsFormsApp1
             {
                 timer1.Stop();
                 MessageBox.Show("tu puntuacion fue " + puntotal);
+                scoreTable.AddPuntuation(new Player(namePlayer, puntotal));
                 this.Close();
                 FormMenuPrincipal formMenuPrincipal = new FormMenuPrincipal();
                 formMenuPrincipal.Show();
@@ -123,7 +132,7 @@ namespace WindowsFormsApp1
             {          
                 preguntadas++; 
                 progressBar1.PerformStep();
-                Llenar();
+                Llenar();               
             }
 
         }

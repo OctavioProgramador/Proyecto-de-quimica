@@ -12,19 +12,21 @@ namespace WindowsFormsApp1
 {   
     public partial class FormMenuPrincipal : Form
     {
+        FormName formName;
         FormScoreTable formScoreTable;
         FormGame formGame;
         public FormMenuPrincipal()
         {
             InitializeComponent();
             formGame = new FormGame();
+            formName = new FormName();
             formScoreTable = new FormScoreTable();
         }
 
         private void buttonInciair_Click(object sender, EventArgs e)
         {
             this.Hide();
-            formGame.Show();
+            formName.Show();
         }
 
         private void buttonTabla_Click(object sender, EventArgs e)
