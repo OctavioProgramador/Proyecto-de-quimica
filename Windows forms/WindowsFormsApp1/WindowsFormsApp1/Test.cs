@@ -53,6 +53,10 @@ namespace WindowsFormsApp1
                 };
                 Serialize();
             }
+            foreach (Question q in questions)
+            {
+                q.CreatePosibleAnswers();
+            }
         }
 
         //Deserealize

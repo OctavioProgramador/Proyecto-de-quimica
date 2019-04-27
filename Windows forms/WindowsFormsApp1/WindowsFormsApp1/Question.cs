@@ -30,14 +30,6 @@ namespace WindowsFormsApp1
             WrongAnswer1 = wrongAnswer1;
             WrongAnswer2 = wrongAnswer2;
             WrongAnswer3 = wrongAnswer3;
-            posibleAnswer = new string[4]
-            {
-                CorrectAnswer,
-                WrongAnswer1,
-                WrongAnswer2,
-                WrongAnswer3
-            };
-            SortTheAnswersRandomly();
         }
 
         //Methods
@@ -77,25 +69,22 @@ namespace WindowsFormsApp1
             WrongAnswer1 = (string)info.GetValue("WrongAnswer1", typeof(string));
             WrongAnswer2 = (string)info.GetValue("WrongAnswer2", typeof(string));
             WrongAnswer3 = (string)info.GetValue("WrongAnswer3", typeof(string));
-            posibleAnswer = new string[4]
-            {
-                CorrectAnswer,
-                WrongAnswer1,
-                WrongAnswer2,
-                WrongAnswer3
-            };
-            SortTheAnswersRandomly();
         }
         
         public Question()
         {
-            /*
+            
             QuestionText = "1";
             CorrectAnswer = "1";
             WrongAnswer1 = "1";
             WrongAnswer2 = "1";
             WrongAnswer3 = "1";
 
+          
+            
+        }
+        public void CreatePosibleAnswers()
+        {
             posibleAnswer = new string[4]
             {
                 CorrectAnswer,
@@ -104,7 +93,6 @@ namespace WindowsFormsApp1
                 WrongAnswer3
             };
             SortTheAnswersRandomly();
-            */
         }
     }
 }
