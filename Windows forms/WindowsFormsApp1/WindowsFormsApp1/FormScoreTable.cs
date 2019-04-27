@@ -38,7 +38,9 @@ namespace WindowsFormsApp1
             foreach(Player player in scoreTable.GetRecord())
             {
                 labelList[index].Text = player.ToString();
+                index++;
             }
+            
         }
     }
 }

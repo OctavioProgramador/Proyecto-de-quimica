@@ -25,9 +25,9 @@ namespace WindowsFormsApp1
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
             if ((textBoxName.Text).Length != 0)
-            {
-                this.Close();
+            {                                
                 FormGame formGame = new FormGame(textBoxName.Text);
+                this.Close();
                 formGame.Show();
             }
         }

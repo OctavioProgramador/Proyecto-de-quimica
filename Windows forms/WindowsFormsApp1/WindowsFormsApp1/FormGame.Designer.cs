@@ -39,6 +39,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.labelPlayer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,16 +136,27 @@
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
             // 
-            // Form1
+            // labelPlayer
+            // 
+            this.labelPlayer.AutoSize = true;
+            this.labelPlayer.Location = new System.Drawing.Point(662, 426);
+            this.labelPlayer.Name = "labelPlayer";
+            this.labelPlayer.Size = new System.Drawing.Size(58, 13);
+            this.labelPlayer.TabIndex = 3;
+            this.labelPlayer.Text = "labelPlayer";
+            // 
+            // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelPlayer);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "FormGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego quimica";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -181,6 +193,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelQuestion;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label labelPlayer;
     }
 }
 

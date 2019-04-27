@@ -13,29 +13,22 @@ namespace WindowsFormsApp1
     public partial class FormGame : Form
     {
         ScoreTable scoreTable;
-        string namePlayer;
         Test newTest= new Test();
+        public string namePlayer;
         public List<Question> questions;
+
         public FormGame()
         {
             InitializeComponent();
         }
+
         public FormGame(string name)
         {
             InitializeComponent();
             scoreTable = new ScoreTable();
             namePlayer = name;
-            //newTest = new Test();
-            /*
-            questions = new List<Question>();
-            questions.Add(new Question("2+2", "4", "2", "3", "5"));
-            questions.Add(new Question("2*2", "4", "2", "3", "5"));
-            questions.Add(new Question("2+3", "5", "2", "3", "6"));
-            questions.Add(new Question("2/2", "1", "2", "3", "5"));
-            questions.Add(new Question("2-1", "1", "2", "3", "5"));
-            */
-            Llenar();
- 
+            labelPlayer.Text = namePlayer;
+            Llenar(); 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -82,8 +75,6 @@ namespace WindowsFormsApp1
             {
                 timer1.Start();
             }
-            //MessageBox.Show("Correcto ");
-           // timer1.Stop();
         }
 
         public void Llenar() {
@@ -122,7 +113,7 @@ namespace WindowsFormsApp1
             {
                 timer1.Stop();
                 MessageBox.Show("tu puntuacion fue " + puntotal);
-                scoreTable.AddPuntuation(new Player(namePlayer, puntotal));
+                scoreTable.AddPuntuation(new Player(labelPlayer.Text, puntotal));
                 this.Close();
                 FormMenuPrincipal formMenuPrincipal = new FormMenuPrincipal();
                 formMenuPrincipal.Show();
@@ -134,7 +125,6 @@ namespace WindowsFormsApp1
                 progressBar1.PerformStep();
                 Llenar();               
             }
-
         }
     }
 }
