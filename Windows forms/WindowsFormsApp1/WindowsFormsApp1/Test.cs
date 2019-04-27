@@ -12,7 +12,6 @@ namespace WindowsFormsApp1
     {
         //Fields
         public string rute;
-        //public Question[] questions;
         public List<Question> questions;
         
         //Constructor
@@ -22,16 +21,6 @@ namespace WindowsFormsApp1
             EnterQuestions();
             //SortTheQuestionsRandomly();
         }
-
-        //Methods
-        /*public Player Start()
-        {
-            string playerName = "";
-            int playerPoints = 0;
-            playerName = AsingPlayerName();
-            playerPoints = DoQuestions();
-            return new Player(playerName, playerPoints);
-        }*/
 
         public string AsingPlayerName()
         {

@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
 
             record.Add(newPuntuation);
             record.Sort();
-
+            record.Reverse();
             if (record.Count > 15)
             {
                 record.Remove(record[15]);
