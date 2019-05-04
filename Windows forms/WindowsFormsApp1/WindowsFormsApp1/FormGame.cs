@@ -38,32 +38,9 @@ namespace WindowsFormsApp1
     
         private void button1_Click(object sender, EventArgs e)
         {
-            CorroborarRespuesta(newTest.questions[posicion].Reply(1));
+            CorroborarRespuesta(newTest.questions[posicion].Reply( ( ( Button )sender ).TabIndex ) );
             CorroborateTotalofQuestions();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            CorroborarRespuesta(newTest.questions[posicion].Reply(2));
-            CorroborateTotalofQuestions();
-        }
-
-        void button3_Click(object sender, EventArgs e)
-        {
-            CorroborarRespuesta(newTest.questions[posicion].Reply(3));
-            CorroborateTotalofQuestions();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            CorroborarRespuesta(newTest.questions[posicion].Reply(4));
-            CorroborateTotalofQuestions();
-        }
-
-        private void buttonSurrender_Click(object sender, EventArgs e)
-        {
-            ExitThisForm();
-        }
+        }       
 
         private void timer1_Tick(object sender, EventArgs e)
         {

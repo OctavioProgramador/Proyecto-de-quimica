@@ -77,7 +77,7 @@
             this.buttonOption4.TabIndex = 4;
             this.buttonOption4.Text = "Psiquico";
             this.buttonOption4.UseVisualStyleBackColor = true;
-            this.buttonOption4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonOption4.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonOption3
             // 
@@ -88,7 +88,7 @@
             this.buttonOption3.TabIndex = 3;
             this.buttonOption3.Text = "aire";
             this.buttonOption3.UseVisualStyleBackColor = true;
-            this.buttonOption3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonOption3.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonOption2
             // 
@@ -99,7 +99,7 @@
             this.buttonOption2.TabIndex = 2;
             this.buttonOption2.Text = "fuego";
             this.buttonOption2.UseVisualStyleBackColor = true;
-            this.buttonOption2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonOption2.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonOption1
             // 
