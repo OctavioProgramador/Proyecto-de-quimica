@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
             WriteQuestion();           
         }
 
-        //Events
+        //Handlers
     
         private void button1_Click(object sender, EventArgs e)
         {
@@ -53,6 +53,11 @@ namespace WindowsFormsApp1
                 progressBar1.PerformStep();
                 WriteQuestion();
             }
+        }
+
+        private void buttonSurrender_Click(object sender, EventArgs e)
+        {
+            ExitThisForm();
         }
 
         //Methods
