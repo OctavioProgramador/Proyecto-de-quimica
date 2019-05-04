@@ -271,6 +271,7 @@
             this.Controls.Add(this.buttonRegresar);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FormScoreTable";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormScoreTable";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();

@@ -37,9 +37,12 @@
             this.buttonOption2 = new System.Windows.Forms.Button();
             this.buttonOption1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.labelPlayer = new System.Windows.Forms.Label();
+            this.labelPoints = new System.Windows.Forms.Label();
+            this.labelCurrentlyQuestion = new System.Windows.Forms.Label();
+            this.buttonSurrender = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,11 +63,10 @@
             this.panel1.Controls.Add(this.buttonOption3);
             this.panel1.Controls.Add(this.buttonOption2);
             this.panel1.Controls.Add(this.buttonOption1);
-            this.panel1.Location = new System.Drawing.Point(12, 16);
+            this.panel1.Location = new System.Drawing.Point(12, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 402);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonOption4
             // 
@@ -116,19 +118,19 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label2
+            // labelTime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(23, 421);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "10";
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelTime.Location = new System.Drawing.Point(13, 474);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(27, 20);
+            this.labelTime.TabIndex = 1;
+            this.labelTime.Text = "10";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(364, 421);
+            this.progressBar1.Location = new System.Drawing.Point(362, 468);
             this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
@@ -139,21 +141,54 @@
             // labelPlayer
             // 
             this.labelPlayer.AutoSize = true;
-            this.labelPlayer.Location = new System.Drawing.Point(662, 426);
+            this.labelPlayer.Location = new System.Drawing.Point(12, 9);
             this.labelPlayer.Name = "labelPlayer";
-            this.labelPlayer.Size = new System.Drawing.Size(58, 13);
+            this.labelPlayer.Size = new System.Drawing.Size(77, 13);
             this.labelPlayer.TabIndex = 3;
-            this.labelPlayer.Text = "labelPlayer";
+            this.labelPlayer.Text = "Jugador actual";
+            // 
+            // labelPoints
+            // 
+            this.labelPoints.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPoints.AutoSize = true;
+            this.labelPoints.Location = new System.Drawing.Point(648, 9);
+            this.labelPoints.Name = "labelPoints";
+            this.labelPoints.Size = new System.Drawing.Size(93, 13);
+            this.labelPoints.TabIndex = 4;
+            this.labelPoints.Text = "Puntuación actual";
+            // 
+            // labelCurrentlyQuestion
+            // 
+            this.labelCurrentlyQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCurrentlyQuestion.AutoSize = true;
+            this.labelCurrentlyQuestion.Location = new System.Drawing.Point(648, 22);
+            this.labelCurrentlyQuestion.Name = "labelCurrentlyQuestion";
+            this.labelCurrentlyQuestion.Size = new System.Drawing.Size(82, 13);
+            this.labelCurrentlyQuestion.TabIndex = 5;
+            this.labelCurrentlyQuestion.Text = "Pregunta actual";
+            // 
+            // buttonSurrender
+            // 
+            this.buttonSurrender.Location = new System.Drawing.Point(713, 471);
+            this.buttonSurrender.Name = "buttonSurrender";
+            this.buttonSurrender.Size = new System.Drawing.Size(75, 23);
+            this.buttonSurrender.TabIndex = 6;
+            this.buttonSurrender.Text = "Rendirse";
+            this.buttonSurrender.UseVisualStyleBackColor = true;
+            this.buttonSurrender.Click += new System.EventHandler(this.buttonSurrender_Click);
             // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 503);
+            this.Controls.Add(this.buttonSurrender);
+            this.Controls.Add(this.labelCurrentlyQuestion);
+            this.Controls.Add(this.labelPoints);
             this.Controls.Add(this.labelPlayer);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelTime);
             this.Controls.Add(this.panel1);
             this.Name = "FormGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -190,10 +225,13 @@
         private System.Windows.Forms.Button buttonOption3;
         private System.Windows.Forms.Button buttonOption2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelQuestion;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label labelPlayer;
+        private System.Windows.Forms.Label labelPoints;
+        private System.Windows.Forms.Label labelCurrentlyQuestion;
+        private System.Windows.Forms.Button buttonSurrender;
     }
 }
 

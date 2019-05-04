@@ -16,6 +16,8 @@ namespace WindowsFormsApp1
         Test newTest= new Test();
         public string namePlayer;
         public List<Question> questions;
+        int NumberOfQuestions;
+        //Constructors 
 
         public FormGame()
         {
@@ -28,32 +30,72 @@ namespace WindowsFormsApp1
             scoreTable = new ScoreTable();
             namePlayer = name;
             labelPlayer.Text = namePlayer;
-            Llenar(); 
+            NumberOfQuestions = 0;
+            WriteQuestion();           
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
+        //Events
     
         private void button1_Click(object sender, EventArgs e)
         {
             CorroborarRespuesta(newTest.questions[posicion].Reply(1));
+            CorroborateTotalofQuestions();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             CorroborarRespuesta(newTest.questions[posicion].Reply(2));
+            CorroborateTotalofQuestions();
         }
 
         void button3_Click(object sender, EventArgs e)
         {
             CorroborarRespuesta(newTest.questions[posicion].Reply(3));
+            CorroborateTotalofQuestions();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             CorroborarRespuesta(newTest.questions[posicion].Reply(4));
+            CorroborateTotalofQuestions();
+        }
+
+        private void buttonSurrender_Click(object sender, EventArgs e)
+        {
+            ExitThisForm();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            conteo--;
+            labelTime.BringToFront();
+            labelTime.Text = "Tiempo restante: "+(conteo.ToString());
+            if (conteo < 1)
+            {
+                NumberOfQuestions++;
+                progressBar1.PerformStep();
+                WriteQuestion();
+            }
+        }
+
+        //Methods
+
+        void CorroborateTotalofQuestions()
+        {
+            if (NumberOfQuestions >= 15)
+            {
+                timer1.Stop();
+                MessageBox.Show("tu puntuacion fue " + puntotal);
+                scoreTable.AddPuntuation(new Player(labelPlayer.Text, puntotal));
+                ExitThisForm();
+            }
+        }
+
+        void ExitThisForm()
+        {
+            this.Close();
+            FormMenuPrincipal formMenuPrincipal = new FormMenuPrincipal();
+            formMenuPrincipal.Show();
         }
 
         void Punt(int tiempo)
@@ -71,13 +113,14 @@ namespace WindowsFormsApp1
             {
                 puntotal = puntotal + 1;
             }
-            if (MessageBox.Show("CORRECTO", "Salir", MessageBoxButtons.OK , MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.OK)
+            timer1.Start();
+            /*if (MessageBox.Show("CORRECTO", "Salir", MessageBoxButtons.OK , MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.OK)
             {
                 timer1.Start();
-            }
+            }*/
         }
 
-        public void Llenar() {
+        public void WriteQuestion() {
 
             Random rnd = new Random();
             
@@ -89,7 +132,11 @@ namespace WindowsFormsApp1
             buttonOption4.Text = newTest.questions[randomIndex].GetPosibleAnswer(3);
             conteo = 11;
             posicion = randomIndex;
-        }
+
+            labelCurrentlyQuestion.Text = "Preguntas respondidas: "+NumberOfQuestions.ToString();
+            labelPoints.Text = "Puntos totales: " + puntotal.ToString();
+            labelTime.Text = "Tiempo restante: " + (conteo.ToString());
+        }   
 
         private void CorroborarRespuesta(bool condiciónLogica)
         {   
@@ -97,34 +144,11 @@ namespace WindowsFormsApp1
             {
                 Punt(conteo);
             }
-            preguntadas++;
+            NumberOfQuestions++;
             progressBar1.PerformStep();
-            Llenar();
+            WriteQuestion();
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            conteo--;
-            label2.BringToFront();
-            label2.Text = (conteo.ToString());      
-
-            if (preguntadas >= 15)
-            {
-                timer1.Stop();
-                MessageBox.Show("tu puntuacion fue " + puntotal);
-                scoreTable.AddPuntuation(new Player(labelPlayer.Text, puntotal));
-                this.Close();
-                FormMenuPrincipal formMenuPrincipal = new FormMenuPrincipal();
-                formMenuPrincipal.Show();
-            }
-
-            if (conteo <1)
-            {          
-                preguntadas++; 
-                progressBar1.PerformStep();
-                Llenar();               
-            }
-        }
     }
 }

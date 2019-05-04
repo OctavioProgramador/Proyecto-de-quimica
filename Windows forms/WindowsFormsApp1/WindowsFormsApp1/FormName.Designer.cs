@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonReturn = new System.Windows.Forms.Button();
+            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,13 +51,26 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // textBoxName
+            // buttonReturn
             // 
-            this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxName.Location = new System.Drawing.Point(6, 45);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(162, 20);
-            this.textBoxName.TabIndex = 0;
+            this.buttonReturn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonReturn.Location = new System.Drawing.Point(93, 130);
+            this.buttonReturn.Name = "buttonReturn";
+            this.buttonReturn.Size = new System.Drawing.Size(75, 23);
+            this.buttonReturn.TabIndex = 3;
+            this.buttonReturn.Text = "Regresar";
+            this.buttonReturn.UseVisualStyleBackColor = true;
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSubmit.Location = new System.Drawing.Point(6, 130);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
+            this.buttonSubmit.TabIndex = 2;
+            this.buttonSubmit.Text = "Empezar!";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // label1
             // 
@@ -71,26 +84,13 @@
             this.label1.Text = "Ingresa tu nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // buttonSubmit
+            // textBoxName
             // 
-            this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSubmit.Location = new System.Drawing.Point(6, 130);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
-            this.buttonSubmit.TabIndex = 2;
-            this.buttonSubmit.Text = "Empezar!";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
-            // 
-            // buttonReturn
-            // 
-            this.buttonReturn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonReturn.Location = new System.Drawing.Point(93, 130);
-            this.buttonReturn.Name = "buttonReturn";
-            this.buttonReturn.Size = new System.Drawing.Size(75, 23);
-            this.buttonReturn.TabIndex = 3;
-            this.buttonReturn.Text = "Regresar";
-            this.buttonReturn.UseVisualStyleBackColor = true;
+            this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxName.Location = new System.Drawing.Point(6, 45);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(162, 20);
+            this.textBoxName.TabIndex = 0;
             // 
             // FormName
             // 
@@ -100,7 +100,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormName";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

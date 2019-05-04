@@ -112,7 +112,8 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormMenuPrincipal";
-            this.Text = "FormMenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Juego de química";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
