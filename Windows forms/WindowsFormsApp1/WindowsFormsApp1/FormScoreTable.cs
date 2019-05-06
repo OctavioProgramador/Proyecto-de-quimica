@@ -13,12 +13,12 @@ namespace WindowsFormsApp1
     public partial class FormScoreTable : Form
     {
         ScoreTable scoreTable;
-        List<Label> labelList;
+        List<Label> labelListSinglePlayer;
         public FormScoreTable()
         {
             InitializeComponent();
             scoreTable = new ScoreTable();
-            labelList = new List<Label>()
+            labelListSinglePlayer = new List<Label>()
             {
                 label1,label2,label3,label4,label5,label6,label7,label8,label9,label10,label9,label10,label11,label12,label13,label14,label15
             };
@@ -37,10 +37,15 @@ namespace WindowsFormsApp1
             int index = 0;
             foreach(Player player in scoreTable.GetRecord())
             {
-                labelList[index].Text = player.ToString();
+                labelListSinglePlayer[index].Text = player.ToString();
                 index++;
             }
             
+        }
+
+        private void tabPageScoresTwoPlayers_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
