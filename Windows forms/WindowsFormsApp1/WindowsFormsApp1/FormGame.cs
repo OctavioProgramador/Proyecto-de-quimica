@@ -44,13 +44,13 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            progressBar1.PerformStep();
             conteo--;
             labelTime.BringToFront();
             labelTime.Text = "Tiempo restante: "+(conteo.ToString());
             if (conteo < 1)
             {
-                NumberOfQuestions++;
-                progressBar1.PerformStep();
+                NumberOfQuestions++;                
                 WriteQuestion();
             }
         }
@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
                 puntotal = puntotal + 1;
             }
             timer1.Start();
+            
             /*if (MessageBox.Show("CORRECTO", "Salir", MessageBoxButtons.OK , MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.OK)
             {
                 timer1.Start();
@@ -105,7 +106,7 @@ namespace WindowsFormsApp1
         }
 
         public void WriteQuestion() {
-
+            progressBar1.Value = 0;
             Random rnd = new Random();
             
             int randomIndex = rnd.Next(0, newTest.questions.Count);
@@ -129,10 +130,12 @@ namespace WindowsFormsApp1
                 Punt(conteo);
             }
             NumberOfQuestions++;
-            progressBar1.PerformStep();
             WriteQuestion();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

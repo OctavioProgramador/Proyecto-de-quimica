@@ -49,11 +49,11 @@
             // labelQuestion
             // 
             this.labelQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.labelQuestion.Location = new System.Drawing.Point(117, 50);
+            this.labelQuestion.Location = new System.Drawing.Point(15, 32);
             this.labelQuestion.Name = "labelQuestion";
-            this.labelQuestion.Size = new System.Drawing.Size(515, 41);
+            this.labelQuestion.Size = new System.Drawing.Size(740, 137);
             this.labelQuestion.TabIndex = 0;
-            this.labelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelQuestion.Text = "Texto por defecto";
             // 
             // panel1
             // 
@@ -67,6 +67,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 402);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonOption4
             // 
@@ -122,7 +123,7 @@
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelTime.Location = new System.Drawing.Point(13, 474);
+            this.labelTime.Location = new System.Drawing.Point(217, 37);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(27, 20);
             this.labelTime.TabIndex = 1;
@@ -130,10 +131,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(362, 468);
-            this.progressBar1.Maximum = 5;
+            this.progressBar1.Location = new System.Drawing.Point(221, 12);
+            this.progressBar1.Maximum = 10;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Size = new System.Drawing.Size(329, 23);
             this.progressBar1.Step = 1;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
@@ -151,7 +152,7 @@
             // 
             this.labelPoints.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPoints.AutoSize = true;
-            this.labelPoints.Location = new System.Drawing.Point(648, 9);
+            this.labelPoints.Location = new System.Drawing.Point(14, 34);
             this.labelPoints.Name = "labelPoints";
             this.labelPoints.Size = new System.Drawing.Size(93, 13);
             this.labelPoints.TabIndex = 4;
@@ -161,7 +162,7 @@
             // 
             this.labelCurrentlyQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCurrentlyQuestion.AutoSize = true;
-            this.labelCurrentlyQuestion.Location = new System.Drawing.Point(648, 22);
+            this.labelCurrentlyQuestion.Location = new System.Drawing.Point(654, 9);
             this.labelCurrentlyQuestion.Name = "labelCurrentlyQuestion";
             this.labelCurrentlyQuestion.Size = new System.Drawing.Size(82, 13);
             this.labelCurrentlyQuestion.TabIndex = 5;
