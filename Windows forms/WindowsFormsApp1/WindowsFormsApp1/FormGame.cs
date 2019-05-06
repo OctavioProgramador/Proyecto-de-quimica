@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
         public FormGame(string name)
         {
             InitializeComponent();
-            scoreTable = new ScoreTable();
+            scoreTable = new ScoreTable(1);
             namePlayer = name;
             labelPlayer.Text = namePlayer;
             NumberOfQuestions = 0;

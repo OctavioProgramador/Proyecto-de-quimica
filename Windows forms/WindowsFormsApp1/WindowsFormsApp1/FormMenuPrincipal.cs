@@ -19,12 +19,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             formGame = new FormGame();
-            formName = new FormName();
             formScoreTable = new FormScoreTable();
-        }
-
+        }        
         private void buttonInciair_Click(object sender, EventArgs e)
         {
+            formName = new FormName(1); 
             this.Hide();
             formName.Show();
         }
@@ -38,6 +37,13 @@ namespace WindowsFormsApp1
         private void buttonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonStartMode2_Click(object sender, EventArgs e)
+        {
+            formName = new FormName(2);
+            this.Hide();
+            formName.Show();
         }
     }
 }

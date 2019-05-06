@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonInciair = new System.Windows.Forms.Button();
+            this.buttonInciairMode1 = new System.Windows.Forms.Button();
             this.buttonTabla = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonStartMode2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -41,28 +42,29 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.buttonInciair);
+            this.flowLayoutPanel1.Controls.Add(this.buttonInciairMode1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonStartMode2);
             this.flowLayoutPanel1.Controls.Add(this.buttonTabla);
             this.flowLayoutPanel1.Controls.Add(this.buttonSalir);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(237, 118);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(136, 201);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(136, 276);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // buttonInciair
+            // buttonInciairMode1
             // 
-            this.buttonInciair.Location = new System.Drawing.Point(3, 3);
-            this.buttonInciair.Name = "buttonInciair";
-            this.buttonInciair.Size = new System.Drawing.Size(130, 61);
-            this.buttonInciair.TabIndex = 0;
-            this.buttonInciair.Text = "Iniciar";
-            this.buttonInciair.UseVisualStyleBackColor = true;
-            this.buttonInciair.Click += new System.EventHandler(this.buttonInciair_Click);
+            this.buttonInciairMode1.Location = new System.Drawing.Point(3, 3);
+            this.buttonInciairMode1.Name = "buttonInciairMode1";
+            this.buttonInciairMode1.Size = new System.Drawing.Size(130, 61);
+            this.buttonInciairMode1.TabIndex = 0;
+            this.buttonInciairMode1.Text = "1 jugador";
+            this.buttonInciairMode1.UseVisualStyleBackColor = true;
+            this.buttonInciairMode1.Click += new System.EventHandler(this.buttonInciair_Click);
             // 
             // buttonTabla
             // 
-            this.buttonTabla.Location = new System.Drawing.Point(3, 70);
+            this.buttonTabla.Location = new System.Drawing.Point(3, 137);
             this.buttonTabla.Name = "buttonTabla";
             this.buttonTabla.Size = new System.Drawing.Size(130, 61);
             this.buttonTabla.TabIndex = 1;
@@ -72,7 +74,7 @@
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(3, 137);
+            this.buttonSalir.Location = new System.Drawing.Point(3, 204);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(130, 61);
             this.buttonSalir.TabIndex = 2;
@@ -104,6 +106,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Juego de química ";
             // 
+            // buttonStartMode2
+            // 
+            this.buttonStartMode2.Location = new System.Drawing.Point(3, 70);
+            this.buttonStartMode2.Name = "buttonStartMode2";
+            this.buttonStartMode2.Size = new System.Drawing.Size(130, 61);
+            this.buttonStartMode2.TabIndex = 3;
+            this.buttonStartMode2.Text = "2 jugadores";
+            this.buttonStartMode2.UseVisualStyleBackColor = true;
+            this.buttonStartMode2.Click += new System.EventHandler(this.buttonStartMode2_Click);
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,10 +137,11 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button buttonInciair;
+        private System.Windows.Forms.Button buttonInciairMode1;
         private System.Windows.Forms.Button buttonTabla;
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonStartMode2;
     }
 }

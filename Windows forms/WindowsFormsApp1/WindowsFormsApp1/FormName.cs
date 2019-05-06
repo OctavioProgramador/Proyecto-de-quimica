@@ -12,9 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class FormName : Form
     {
+        int numPlayers;
         public FormName()
         {
             InitializeComponent();
+        }
+
+        public FormName(int players)
+        {
+            InitializeComponent();
+            numPlayers = players;            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,11 +31,33 @@ namespace WindowsFormsApp1
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            if ((textBoxName.Text).Length != 0)
-            {                                
-                FormGame formGame = new FormGame(textBoxName.Text);
-                this.Close();
-                formGame.Show();
+            if (numPlayers ==1 )
+            {
+                if ((textBoxNamePlayer1.Text).Length != 0)
+                {
+                    FormGame formGame = new FormGame(textBoxNamePlayer1.Text);
+                    this.Close();
+                    formGame.Show();
+                }
+            }
+            if (numPlayers == 2)
+            {
+                if (((textBoxNamePlayer1.Text).Length != 0 ) && ((textBoxNamePlayer1.Text).Length != 0))
+                {
+                    FormGameTwoPlayers formGameTwoPlayers = new FormGameTwoPlayers(textBoxNamePlayer1.Text, textBoxNamePlayer2.Text);
+                    this.Close();
+                    formGameTwoPlayers.Show();
+                }
+            }
+
+        }
+
+        private void FormName_Load(object sender, EventArgs e)
+        {
+            if (numPlayers == 1)
+            {
+                label2.Visible = false;
+                textBoxNamePlayer2.Visible = false;
             }
         }
     }

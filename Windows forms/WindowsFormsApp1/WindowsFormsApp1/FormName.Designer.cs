@@ -32,7 +32,9 @@
             this.buttonReturn = new System.Windows.Forms.Button();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxNamePlayer1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxNamePlayer2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,10 +43,12 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBoxNamePlayer2);
             this.groupBox1.Controls.Add(this.buttonReturn);
             this.groupBox1.Controls.Add(this.buttonSubmit);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxName);
+            this.groupBox1.Controls.Add(this.textBoxNamePlayer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 159);
@@ -84,13 +88,32 @@
             this.label1.Text = "Ingresa tu nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBoxName
+            // textBoxNamePlayer1
             // 
-            this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxName.Location = new System.Drawing.Point(6, 45);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(162, 20);
-            this.textBoxName.TabIndex = 0;
+            this.textBoxNamePlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNamePlayer1.Location = new System.Drawing.Point(6, 45);
+            this.textBoxNamePlayer1.Name = "textBoxNamePlayer1";
+            this.textBoxNamePlayer1.Size = new System.Drawing.Size(162, 20);
+            this.textBoxNamePlayer1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Ingresa tu nombre";
+            // 
+            // textBoxNamePlayer2
+            // 
+            this.textBoxNamePlayer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNamePlayer2.Location = new System.Drawing.Point(6, 104);
+            this.textBoxNamePlayer2.Name = "textBoxNamePlayer2";
+            this.textBoxNamePlayer2.Size = new System.Drawing.Size(162, 20);
+            this.textBoxNamePlayer2.TabIndex = 4;
             // 
             // FormName
             // 
@@ -100,6 +123,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormName_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -112,6 +136,8 @@
         private System.Windows.Forms.Button buttonReturn;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxNamePlayer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxNamePlayer2;
     }
 }

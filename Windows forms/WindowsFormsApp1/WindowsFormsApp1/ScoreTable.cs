@@ -15,9 +15,16 @@ namespace WindowsFormsApp1
     {
         public string rute;
         private List<Player> record;
-        public ScoreTable()
+        public ScoreTable(int modePlayer)
         {
-            rute = Directory.GetCurrentDirectory() + @"\playerScore.xml";
+            if(modePlayer == 1)
+            {
+                rute = Directory.GetCurrentDirectory() + @"\playerScore1PLayer.xml";
+            }
+            else if(modePlayer == 2)
+            {
+                rute = Directory.GetCurrentDirectory() + @"\playerScore2PLayer.xml";
+            }          
             record = new List<Player>();
             if (File.Exists(rute))
             {
