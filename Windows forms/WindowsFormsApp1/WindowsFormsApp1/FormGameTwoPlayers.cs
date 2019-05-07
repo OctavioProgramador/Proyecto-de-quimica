@@ -105,6 +105,8 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Lo que hice fue poner los códigos de los 2 timers en uno sólo.
+            //Pero cada uno se reinicia según el método PointSistem
             progressBar1.PerformStep();
             countingPlayer1--;
             labelTime1.BringToFront();
@@ -114,10 +116,21 @@ namespace WindowsFormsApp1
                 NumberOfQuestionsPlayer1++;
                 WriteQuestionPlayer1();
             }
+
+            progressBar2.PerformStep();
+            countingPlayer2--;
+            labelTime2.BringToFront();
+            labelTime2.Text = "Tiempo restante: " + (countingPlayer2.ToString());
+            if (countingPlayer2 < 1)
+            {
+                NumberOfQuestionsPlayer2++;
+                WriteQuestionPlayer2();
+            }
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        /*private void timer2_Tick(object sender, EventArgs e)
         {
+            /*
             progressBar2.PerformStep();
             countingPlayer2--;
             labelTime1.BringToFront();
@@ -127,7 +140,7 @@ namespace WindowsFormsApp1
                 NumberOfQuestionsPlayer2++;
                 WriteQuestionPlayer2();
             }
-        }
+        }*/
 
         #endregion
 
@@ -195,7 +208,7 @@ namespace WindowsFormsApp1
             }
             else if (player ==2)
             {
-                timer2.Stop();
+                timer1.Stop();
                 if (countingPlayer2 > 10)
                 {
                     totalPointsPlayer2 = totalPointsPlayer2 + 5;
@@ -208,7 +221,7 @@ namespace WindowsFormsApp1
                 {
                     totalPointsPlayer2 = totalPointsPlayer2 + 1;
                 }
-                timer2.Start();
+                timer1.Start();
 
             }
         }
@@ -235,7 +248,9 @@ namespace WindowsFormsApp1
         {
             if (NumberOfQuestionsPlayer1 >= 15)
             {
-                timer1.Stop();
+                progressBar1.Value = 0;
+                progressBar1.Enabled = false;
+                //timer1.Stop();
                 MessageBox.Show("tu puntuacion fue " + totalPointsPlayer1);
                 scoreTable.AddPuntuation(new Player(labelPlayer1.Text, totalPointsPlayer1));
                 CanExit1 = true;
@@ -247,6 +262,8 @@ namespace WindowsFormsApp1
         {
             if (NumberOfQuestionsPlayer2 >= 15)
             {
+                progressBar2.Value = 0;
+                progressBar2.Enabled = false;
                 timer1.Stop();
                 MessageBox.Show("tu puntuacion fue " + totalPointsPlayer2);
                 scoreTable.AddPuntuation(new Player(labelPlayer2.Text, totalPointsPlayer2));

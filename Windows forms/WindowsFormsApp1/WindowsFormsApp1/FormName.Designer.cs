@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxNamePlayer2 = new System.Windows.Forms.TextBox();
             this.buttonReturn = new System.Windows.Forms.Button();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNamePlayer1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxNamePlayer2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,25 @@
             this.groupBox1.Size = new System.Drawing.Size(174, 159);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Ingresa el nombre del jugador 2";
+            // 
+            // textBoxNamePlayer2
+            // 
+            this.textBoxNamePlayer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNamePlayer2.Location = new System.Drawing.Point(6, 104);
+            this.textBoxNamePlayer2.Name = "textBoxNamePlayer2";
+            this.textBoxNamePlayer2.Size = new System.Drawing.Size(162, 20);
+            this.textBoxNamePlayer2.TabIndex = 4;
             // 
             // buttonReturn
             // 
@@ -83,9 +102,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
+            this.label1.Size = new System.Drawing.Size(155, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ingresa tu nombre";
+            this.label1.Text = "Ingresa el nombre del jugador 1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxNamePlayer1
@@ -95,25 +114,6 @@
             this.textBoxNamePlayer1.Name = "textBoxNamePlayer1";
             this.textBoxNamePlayer1.Size = new System.Drawing.Size(162, 20);
             this.textBoxNamePlayer1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Ingresa tu nombre";
-            // 
-            // textBoxNamePlayer2
-            // 
-            this.textBoxNamePlayer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNamePlayer2.Location = new System.Drawing.Point(6, 104);
-            this.textBoxNamePlayer2.Name = "textBoxNamePlayer2";
-            this.textBoxNamePlayer2.Size = new System.Drawing.Size(162, 20);
-            this.textBoxNamePlayer2.TabIndex = 4;
             // 
             // FormName
             // 

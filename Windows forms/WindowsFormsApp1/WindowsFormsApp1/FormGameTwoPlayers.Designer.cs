@@ -43,6 +43,7 @@
             this.buttonOption2Player1 = new System.Windows.Forms.Button();
             this.buttonOption1Player1 = new System.Windows.Forms.Button();
             this.panelPlayer2 = new System.Windows.Forms.Panel();
+            this.labelCurrentlyQuestion2 = new System.Windows.Forms.Label();
             this.buttonSurrenderPlayer2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPoints2 = new System.Windows.Forms.Label();
@@ -56,8 +57,6 @@
             this.buttonOption2Player2 = new System.Windows.Forms.Button();
             this.buttonOption1Player2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.labelCurrentlyQuestion2 = new System.Windows.Forms.Label();
             this.panelPlayer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelPlayer2.SuspendLayout();
@@ -214,6 +213,16 @@
             this.panelPlayer2.Size = new System.Drawing.Size(616, 709);
             this.panelPlayer2.TabIndex = 1;
             // 
+            // labelCurrentlyQuestion2
+            // 
+            this.labelCurrentlyQuestion2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelCurrentlyQuestion2.AutoSize = true;
+            this.labelCurrentlyQuestion2.Location = new System.Drawing.Point(460, 41);
+            this.labelCurrentlyQuestion2.Name = "labelCurrentlyQuestion2";
+            this.labelCurrentlyQuestion2.Size = new System.Drawing.Size(82, 13);
+            this.labelCurrentlyQuestion2.TabIndex = 14;
+            this.labelCurrentlyQuestion2.Text = "Pregunta actual";
+            // 
             // buttonSurrenderPlayer2
             // 
             this.buttonSurrenderPlayer2.Location = new System.Drawing.Point(518, 669);
@@ -336,21 +345,9 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // labelCurrentlyQuestion2
-            // 
-            this.labelCurrentlyQuestion2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelCurrentlyQuestion2.AutoSize = true;
-            this.labelCurrentlyQuestion2.Location = new System.Drawing.Point(460, 41);
-            this.labelCurrentlyQuestion2.Name = "labelCurrentlyQuestion2";
-            this.labelCurrentlyQuestion2.Size = new System.Drawing.Size(82, 13);
-            this.labelCurrentlyQuestion2.TabIndex = 14;
-            this.labelCurrentlyQuestion2.Text = "Pregunta actual";
             // 
             // FormGameTwoPlayers
             // 
@@ -403,7 +400,6 @@
         private System.Windows.Forms.Button buttonOption2Player2;
         private System.Windows.Forms.Button buttonOption1Player2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label labelCurrentlyQuestion2;
     }
 }
