@@ -60,6 +60,7 @@ namespace WindowsFormsApp1
         #region handlers        
         private void FormGameTwoPlayers_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (!CanExit1)
             {
                 if (e.KeyCode.Equals(Keys.Q))
