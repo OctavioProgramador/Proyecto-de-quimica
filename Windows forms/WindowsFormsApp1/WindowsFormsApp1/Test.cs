@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
             }
             foreach (Question q in questions)
             {
-                q.CreatePosibleAnswers();
+                q.CreatePosibleAnswers();                
             }
         }
 

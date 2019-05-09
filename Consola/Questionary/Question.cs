@@ -58,7 +58,8 @@ namespace Questionary
         }
         public void SortTheAnswersRandomly()
         {
-            Random random = new Random();
+            Random randomSeed = new Random();
+            Random random = new Random(randomSeed.Next(100));
             int[] randomIndex = new int[4]
             {
                 random.Next(4),

@@ -1,6 +1,6 @@
 ﻿
 using System;
-
+using System.Threading;
 using System.Runtime.Serialization;
 
 
@@ -40,8 +40,9 @@ namespace WindowsFormsApp1
         }
 
         public void SortTheAnswersRandomly()
-        {
+        {           
             Random random = new Random();
+            Thread.Sleep(10);
             int[] randomIndex = new int[4]
             {
                 random.Next(4),
@@ -50,6 +51,7 @@ namespace WindowsFormsApp1
                 random.Next(4),
             };
             Array.Sort(randomIndex, posibleAnswer);
+
         }
 
         //Serialize
@@ -78,10 +80,7 @@ namespace WindowsFormsApp1
             CorrectAnswer = "1";
             WrongAnswer1 = "1";
             WrongAnswer2 = "1";
-            WrongAnswer3 = "1";
-
-          
-            
+            WrongAnswer3 = "1";                     
         }
         public void CreatePosibleAnswers()
         {
