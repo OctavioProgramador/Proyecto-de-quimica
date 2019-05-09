@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Player>
+    <Name>123</Name>
+    <Score>73</Score>
+  </Player>
+  <Player>
+    <Name>qwe</Name>
+    <Score>73</Score>
+  </Player>
+  <Player>
+    <Name>qwerrt</Name>
+    <Score>73</Score>
+  </Player>
+  <Player>
+    <Name>123</Name>
+    <Score>73</Score>
+  </Player>
+  <Player>
+    <Name>123</Name>
+    <Score>71</Score>
+  </Player>
+  <Player>
+    <Name>zxcf</Name>
+    <Score>71</Score>
+  </Player>
+  <Player>
+    <Name>123</Name>
+    <Score>71</Score>
+  </Player>
+  <Player>
+    <Name>asd</Name>
+    <Score>69</Score>
+  </Player>
+  <Player>
+    <Name>456</Name>
+    <Score>59</Score>
+  </Player>
+  <Player>
+    <Name>Jugador1</Name>
+    <Score>49</Score>
+  </Player>
+</ArrayOfPlayer>

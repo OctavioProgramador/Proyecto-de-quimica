@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <QuestionText>¿Cuál es la fórmula química del hidróxido de potasio?</QuestionText>
+    <CorrectAnswer>KOH</CorrectAnswer>
+    <WrongAnswer1>OHK</WrongAnswer1>
+    <WrongAnswer2>HKO</WrongAnswer2>
+    <WrongAnswer3>OKH</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Es un monóxido de silicio</QuestionText>
+    <CorrectAnswer>SiO</CorrectAnswer>
+    <WrongAnswer1>SiO₂</WrongAnswer1>
+    <WrongAnswer2>SiO₃</WrongAnswer2>
+    <WrongAnswer3>SiO₄</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Fórmula química del Etileno:</QuestionText>
+    <CorrectAnswer>C₂H₄</CorrectAnswer>
+    <WrongAnswer1>C₃H₂</WrongAnswer1>
+    <WrongAnswer2>C₂H₂</WrongAnswer2>
+    <WrongAnswer3>C₄H₂</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Fórmula empírica de la glucosa:</QuestionText>
+    <CorrectAnswer>CH₂O</CorrectAnswer>
+    <WrongAnswer1>CHO₂</WrongAnswer1>
+    <WrongAnswer2>C₂HO</WrongAnswer2>
+    <WrongAnswer3>C₄HO</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Fórmula empírica del óxido nitroso:</QuestionText>
+    <CorrectAnswer>N₂O</CorrectAnswer>
+    <WrongAnswer1>NO</WrongAnswer1>
+    <WrongAnswer2>NO₂</WrongAnswer2>
+    <WrongAnswer3>N₃O</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Fórmula empírica del diborano:</QuestionText>
+    <CorrectAnswer>B₂H₆</CorrectAnswer>
+    <WrongAnswer1>B₄H₄</WrongAnswer1>
+    <WrongAnswer2>B₂H₄</WrongAnswer2>
+    <WrongAnswer3>BH₂</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Los átomos metales tienden a ______ electrones  y los átomos no metales tienden a ______ electrones.</QuestionText>
+    <CorrectAnswer>perder, ganar</CorrectAnswer>
+    <WrongAnswer1>cargar, descargar</WrongAnswer1>
+    <WrongAnswer2>sobrecargar, descargar</WrongAnswer2>
+    <WrongAnswer3>ganar , perder</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>¿Cuántas sustancias químicas son conocidas?</QuestionText>
+    <CorrectAnswer>50 millones</CorrectAnswer>
+    <WrongAnswer1>1 millón</WrongAnswer1>
+    <WrongAnswer2>130</WrongAnswer2>
+    <WrongAnswer3>118</WrongAnswer3>
+  </Question>
+<Question>
+    <QuestionText>Fórmula química del sulfato de potasio:</QuestionText>
+    <CorrectAnswer>K₂S</CorrectAnswer>
+    <WrongAnswer1>KS₂</WrongAnswer1>
+    <WrongAnswer2>K₃S</WrongAnswer2>
+    <WrongAnswer3>KS₃</WrongAnswer3>
+  </Question>  
+  <Question>
+    <QuestionText>Fórmula química del perclorato de níquel(II):</QuestionText>
+    <CorrectAnswer>Ni(ClO₂)₂</CorrectAnswer>
+    <WrongAnswer1>Ni(CiO₂)₂</WrongAnswer1>
+    <WrongAnswer2>Ni(Cl₂O)₂</WrongAnswer2>
+    <WrongAnswer3>Ni(ClO)₂</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Nombre del ácido H₂SO₃:</QuestionText>
+    <CorrectAnswer>Ácido sulfuroso</CorrectAnswer>
+    <WrongAnswer1>Acido sulfirico</WrongAnswer1>
+    <WrongAnswer2>Acido sulfurin</WrongAnswer2>
+    <WrongAnswer3>Acido hipo sulfirico</WrongAnswer3>
+  </Question>
+  <Question>
+    <QuestionText>Fórmula química del tetrabromuro de silicio:</QuestionText>
+    <CorrectAnswer>SiBr₄</CorrectAnswer>
+    <WrongAnswer1>Si₄Br</WrongAnswer1>
+    <WrongAnswer2>4SiBr</WrongAnswer2>
+    <WrongAnswer3>Si(Br)₄</WrongAnswer3>
+  </Question>
+</ArrayOfQuestion>
