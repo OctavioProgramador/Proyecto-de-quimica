@@ -95,6 +95,7 @@
             this.buttonSurrenderPlayer1.TabIndex = 13;
             this.buttonSurrenderPlayer1.Text = "Rendirse";
             this.buttonSurrenderPlayer1.UseVisualStyleBackColor = true;
+            this.buttonSurrenderPlayer1.Click += new System.EventHandler(this.buttonSurrenderPlayer1_Click);
             // 
             // labelCurrentlyQuestion1
             // 
@@ -216,6 +217,7 @@
             this.buttonOption4Player1.TabIndex = 4;
             this.buttonOption4Player1.Text = "Psiquico";
             this.buttonOption4Player1.UseVisualStyleBackColor = true;
+            this.buttonOption4Player1.Click += new System.EventHandler(this.buttonOption4Player1_Click);
             // 
             // buttonOption3Player1
             // 
@@ -280,6 +282,7 @@
             this.buttonSurrenderPlayer2.TabIndex = 13;
             this.buttonSurrenderPlayer2.Text = "Rendirse";
             this.buttonSurrenderPlayer2.UseVisualStyleBackColor = true;
+            this.buttonSurrenderPlayer2.Click += new System.EventHandler(this.buttonSurrenderPlayer2_Click);
             // 
             // label1
             // 

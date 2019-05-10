@@ -29,8 +29,8 @@ namespace WindowsFormsApp1
         int timeLeftPlayer2 = 0;
         int positionPlayer2 = 0;
         int totalPointsPlayer2 = 0;
-        bool CanExit1 = false;
-        bool CanExit2 = false;    
+        bool CanPlay1 = true;
+        bool CanPlay2 = true;    
 
         //Constructors
 
@@ -45,8 +45,8 @@ namespace WindowsFormsApp1
             scoreTable = new ScoreTable(2);
             this.namePlayer1 = namePlayer1;
             labelPlayer1.Text = this.namePlayer1;
-            this.namePlayer1 = namePlayer2;
-            labelPlayer1.Text = this.namePlayer2;
+            this.namePlayer2 = namePlayer2;
+            labelPlayer2.Text = this.namePlayer2;
             NumberOfQuestionsPlayer1 = 0;
             NumberOfQuestionsPlayer2 = 0;
             WriteQuestionPlayer1();
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         private void FormGameTwoPlayers_KeyDown(object sender, KeyEventArgs e)
         {
 
-            if (!CanExit1)
+            if (CanPlay1)
             {
                 if (e.KeyCode.Equals(Keys.Q))
                 {
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
                 }
             }
 
-            if (!CanExit2)
+            if (CanPlay2)
             {
                 if (e.KeyCode.Equals(Keys.NumPad7))
                 {
@@ -163,7 +163,7 @@ namespace WindowsFormsApp1
         #region methods
         public void WriteQuestionPlayer1()
         {
-            if (!CanExit1)
+            if (CanPlay1)
             {
                 
                 progressBar1.Value = 0;
@@ -188,7 +188,7 @@ namespace WindowsFormsApp1
 
         public void WriteQuestionPlayer2()
         {
-            if (!CanExit2)
+            if (CanPlay2)
             {
                 progressBar2.Value = 0;
                 Random rnd = new Random();
@@ -271,11 +271,7 @@ namespace WindowsFormsApp1
         {
             if (NumberOfQuestionsPlayer1 >= 15)
             {
-                progressBar1.Value = 0;
-                progressBar1.Enabled = false;
-                timer1.Stop();               
-                CanExit1 = true;
-                ExitThisForm();
+                Player1Finished();
             }
         }
 
@@ -283,22 +279,16 @@ namespace WindowsFormsApp1
         {
             if (NumberOfQuestionsPlayer2 >= 15)
             {
-                progressBar2.Value = 0;
-                progressBar2.Enabled = false;
-                timer2.Stop();
-                //MessageBox.Show("tu puntuacion fue " + totalPointsPlayer2);
-                //scoreTable.AddPuntuation(new Player(namePlayer2, totalPointsPlayer2));
-                CanExit2 = true;
-                ExitThisForm();
+                Player2Finished();
             }
         }
 
         void ExitThisForm()
         {
-            if (CanExit1 == true && CanExit2 == true)
+            if (CanPlay1 == false && CanPlay2 == false)
             {
                 timer1.Stop();
-                MessageBox.Show("Jugador 1: " + totalPointsPlayer1+"\n"+ "Jugador 2: " + totalPointsPlayer2);
+                MessageBox.Show(namePlayer1+": " + totalPointsPlayer1+"\n"+ namePlayer2+": " + totalPointsPlayer2);
                 
                 scoreTable.AddPuntuation(new Player(namePlayer1, totalPointsPlayer1));
                 scoreTable.AddPuntuation(new Player(namePlayer2, totalPointsPlayer2));
@@ -310,8 +300,42 @@ namespace WindowsFormsApp1
 
 
 
+
         #endregion
 
-  
+        private void buttonOption4Player1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private  void Player1Finished()
+        {
+            progressBar1.Value = 0;
+            progressBar1.Enabled = false;
+            timer1.Stop();
+            CanPlay1 = false;
+            ExitThisForm();
+        }
+
+        private void Player2Finished()
+        {
+            progressBar2.Value = 0;
+            progressBar2.Enabled = false;
+            timer2.Stop();
+            CanPlay2 = false;
+            ExitThisForm();
+        }
+
+        private void buttonSurrenderPlayer1_Click(object sender, EventArgs e)
+        {
+            
+            Player1Finished();
+
+        }
+
+        private void buttonSurrenderPlayer2_Click(object sender, EventArgs e)
+        {
+            Player2Finished();
+        }
     }
 }

@@ -83,6 +83,7 @@
             this.buttonReturn.TabIndex = 3;
             this.buttonReturn.Text = "Regresar";
             this.buttonReturn.UseVisualStyleBackColor = true;
+            this.buttonReturn.Click += new System.EventHandler(this.buttonReturn_Click);
             // 
             // buttonSubmit
             // 

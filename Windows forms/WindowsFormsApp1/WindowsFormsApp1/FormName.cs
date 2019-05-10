@@ -60,5 +60,13 @@ namespace WindowsFormsApp1
                 textBoxNamePlayer2.Visible = false;
             }
         }
+
+        private void buttonReturn_Click(object sender, EventArgs e)
+        {
+            FormMenuPrincipal Menu = new FormMenuPrincipal();
+            this.Hide();
+            Menu.Show();
+            
+        }
     }
 }
