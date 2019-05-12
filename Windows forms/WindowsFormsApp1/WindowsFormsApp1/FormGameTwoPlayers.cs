@@ -337,5 +337,20 @@ namespace WindowsFormsApp1
         {
             Player2Finished();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonOption1Player2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTime2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

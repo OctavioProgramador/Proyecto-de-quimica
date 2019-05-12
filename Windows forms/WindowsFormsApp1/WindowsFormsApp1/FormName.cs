@@ -39,14 +39,22 @@ namespace WindowsFormsApp1
                     this.Close();
                     formGame.Show();
                 }
+                else
+                {
+                    MessageBox.Show("Ingrese nombre del jugador");
+                }
             }
             if (numPlayers == 2)
             {
-                if (((textBoxNamePlayer1.Text).Length != 0 ) && ((textBoxNamePlayer1.Text).Length != 0))
+                if (((textBoxNamePlayer1.Text).Length != 0 ) && ((textBoxNamePlayer2.Text).Length != 0))
                 {
                     FormGameTwoPlayers formGameTwoPlayers = new FormGameTwoPlayers(textBoxNamePlayer1.Text, textBoxNamePlayer2.Text);
                     this.Close();
                     formGameTwoPlayers.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese nombre de ambos jugadores");
                 }
             }
 
