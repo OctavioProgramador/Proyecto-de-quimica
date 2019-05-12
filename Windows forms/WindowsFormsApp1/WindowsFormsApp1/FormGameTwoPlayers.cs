@@ -55,8 +55,6 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        //Handlers
-
         #region handlers        
         private void FormGameTwoPlayers_KeyDown(object sender, KeyEventArgs e)
         {
@@ -142,23 +140,18 @@ namespace WindowsFormsApp1
             }
         }
 
-        /*private void timer2_Tick(object sender, EventArgs e)
+        private void buttonSurrenderPlayer1_Click(object sender, EventArgs e)
         {
-            /*
-            progressBar2.PerformStep();
-            countingPlayer2--;
-            labelTime1.BringToFront();
-            labelTime2.Text = "Tiempo restante: " + (countingPlayer2.ToString());
-            if (countingPlayer2 < 1)
-            {
-                NumberOfQuestionsPlayer2++;
-                WriteQuestionPlayer2();
-            }
-        }*/
 
+            Player1Finished();
+
+        }
+
+        private void buttonSurrenderPlayer2_Click(object sender, EventArgs e)
+        {
+            Player2Finished();
+        }       
         #endregion
-
-        //Methods
 
         #region methods
         public void WriteQuestionPlayer1()
@@ -252,7 +245,6 @@ namespace WindowsFormsApp1
         {
             if (condicionLogica)
             {
-                //!!!
                 PointSystem(player);
             }
             if (player == 1)
@@ -298,17 +290,7 @@ namespace WindowsFormsApp1
             }            
         }
 
-
-
-
-        #endregion
-
-        private void buttonOption4Player1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private  void Player1Finished()
+        private void Player1Finished()
         {
             progressBar1.Value = 0;
             progressBar1.Enabled = false;
@@ -324,33 +306,7 @@ namespace WindowsFormsApp1
             timer2.Stop();
             CanPlay2 = false;
             ExitThisForm();
-        }
-
-        private void buttonSurrenderPlayer1_Click(object sender, EventArgs e)
-        {
-            
-            Player1Finished();
-
-        }
-
-        private void buttonSurrenderPlayer2_Click(object sender, EventArgs e)
-        {
-            Player2Finished();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void buttonOption1Player2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelTime2_Click(object sender, EventArgs e)
-        {
-
-        }
+        }  
+        #endregion
     }
 }

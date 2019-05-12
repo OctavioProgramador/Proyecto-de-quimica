@@ -17,7 +17,8 @@ namespace WindowsFormsApp1
         public string namePlayer;
         public List<Question> questions;
         int NumberOfQuestions;
-        //Constructors 
+
+        #region Constructors
 
         public FormGame()
         {
@@ -33,9 +34,9 @@ namespace WindowsFormsApp1
             NumberOfQuestions = 0;
             WriteQuestion();           
         }
+        #endregion
 
-        //Handlers
-    
+        #region Handlers 
         private void button1_Click(object sender, EventArgs e)
         {
             CorroborarRespuesta(newTest.questions[posicion].Reply( ( ( Button )sender ).TabIndex ) );
@@ -59,11 +60,9 @@ namespace WindowsFormsApp1
         {
             ExitThisForm();
         }
+        #endregion
 
-        
-
-        //Methods
-
+        #region Methods
         void CorroborateTotalofQuestions()
         {
             if (NumberOfQuestions >= 15)
@@ -97,12 +96,7 @@ namespace WindowsFormsApp1
             {
                 puntotal = puntotal + 1;
             }
-            timer1.Start();
-            
-            /*if (MessageBox.Show("CORRECTO", "Salir", MessageBoxButtons.OK , MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.OK)
-            {
-                timer1.Start();
-            }*/
+            timer1.Start();          
         }
 
         public void WriteQuestion() {
@@ -132,15 +126,6 @@ namespace WindowsFormsApp1
             NumberOfQuestions++;
             WriteQuestion();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

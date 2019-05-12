@@ -73,9 +73,13 @@
             // 
             // buttonRegresar
             // 
-            this.buttonRegresar.Location = new System.Drawing.Point(713, 415);
+            this.buttonRegresar.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._59695040_375459249738381_985732669885120512_n;
+            this.buttonRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegresar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegresar.Location = new System.Drawing.Point(711, 376);
             this.buttonRegresar.Name = "buttonRegresar";
-            this.buttonRegresar.Size = new System.Drawing.Size(75, 23);
+            this.buttonRegresar.Size = new System.Drawing.Size(77, 62);
             this.buttonRegresar.TabIndex = 3;
             this.buttonRegresar.Text = "Regresar";
             this.buttonRegresar.UseVisualStyleBackColor = true;
@@ -298,6 +302,7 @@
             // 
             // tabPageScoresSingle
             // 
+            this.tabPageScoresSingle.BackColor = System.Drawing.Color.Transparent;
             this.tabPageScoresSingle.Controls.Add(this.flowLayoutPanelScores);
             this.tabPageScoresSingle.Location = new System.Drawing.Point(4, 22);
             this.tabPageScoresSingle.Name = "tabPageScoresSingle";
@@ -305,7 +310,6 @@
             this.tabPageScoresSingle.Size = new System.Drawing.Size(667, 400);
             this.tabPageScoresSingle.TabIndex = 0;
             this.tabPageScoresSingle.Text = "Modo un jugador";
-            this.tabPageScoresSingle.UseVisualStyleBackColor = true;
             // 
             // tabPageScoresTwoPlayers
             // 
@@ -528,9 +532,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.BlueBackground;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonRegresar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormScoreTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormScoreTable";

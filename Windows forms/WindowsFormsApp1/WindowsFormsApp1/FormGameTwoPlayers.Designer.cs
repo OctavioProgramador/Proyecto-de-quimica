@@ -31,50 +31,50 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGameTwoPlayers));
             this.panelPlayer1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonOption4Player1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonOption3Player1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonOption2Player1 = new System.Windows.Forms.Button();
             this.buttonSurrenderPlayer1 = new System.Windows.Forms.Button();
+            this.buttonOption1Player1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.labelCurrentlyQuestion1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.labelPoints1 = new System.Windows.Forms.Label();
             this.labelPlayer1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.labelTime1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.labelQuestionPlayer1 = new System.Windows.Forms.Label();
-            this.buttonOption4Player1 = new System.Windows.Forms.Button();
-            this.buttonOption3Player1 = new System.Windows.Forms.Button();
-            this.buttonOption2Player1 = new System.Windows.Forms.Button();
-            this.buttonOption1Player1 = new System.Windows.Forms.Button();
             this.panelPlayer2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.labelCurrentlyQuestion2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.buttonSurrenderPlayer2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPoints2 = new System.Windows.Forms.Label();
-            this.labelPlayer2 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.labelTime2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.labelQuestionPlayer2 = new System.Windows.Forms.Label();
             this.buttonOption4Player2 = new System.Windows.Forms.Button();
+            this.labelPlayer2 = new System.Windows.Forms.Label();
             this.buttonOption3Player2 = new System.Windows.Forms.Button();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.buttonOption2Player2 = new System.Windows.Forms.Button();
+            this.labelTime2 = new System.Windows.Forms.Label();
             this.buttonOption1Player2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelQuestionPlayer2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelPlayer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelPlayer2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPlayer1
@@ -102,6 +102,64 @@
             this.panelPlayer1.Size = new System.Drawing.Size(603, 472);
             this.panelPlayer1.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(303, 368);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "S";
+            // 
+            // buttonOption4Player1
+            // 
+            this.buttonOption4Player1.Font = new System.Drawing.Font("Arial", 15F);
+            this.buttonOption4Player1.Location = new System.Drawing.Point(329, 345);
+            this.buttonOption4Player1.Name = "buttonOption4Player1";
+            this.buttonOption4Player1.Size = new System.Drawing.Size(250, 52);
+            this.buttonOption4Player1.TabIndex = 4;
+            this.buttonOption4Player1.Text = "Psiquico";
+            this.buttonOption4Player1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonOption3Player1
+            // 
+            this.buttonOption3Player1.Font = new System.Drawing.Font("Arial", 15F);
+            this.buttonOption3Player1.Location = new System.Drawing.Point(44, 345);
+            this.buttonOption3Player1.Name = "buttonOption3Player1";
+            this.buttonOption3Player1.Size = new System.Drawing.Size(250, 52);
+            this.buttonOption3Player1.TabIndex = 3;
+            this.buttonOption3Player1.Text = "aire";
+            this.buttonOption3Player1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 368);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "A";
+            // 
+            // buttonOption2Player1
+            // 
+            this.buttonOption2Player1.Font = new System.Drawing.Font("Arial", 15F);
+            this.buttonOption2Player1.Location = new System.Drawing.Point(329, 262);
+            this.buttonOption2Player1.Name = "buttonOption2Player1";
+            this.buttonOption2Player1.Size = new System.Drawing.Size(250, 54);
+            this.buttonOption2Player1.TabIndex = 2;
+            this.buttonOption2Player1.Text = "fuego";
+            this.buttonOption2Player1.UseVisualStyleBackColor = true;
+            // 
             // buttonSurrenderPlayer1
             // 
             this.buttonSurrenderPlayer1.Location = new System.Drawing.Point(504, 441);
@@ -112,6 +170,25 @@
             this.buttonSurrenderPlayer1.UseVisualStyleBackColor = true;
             this.buttonSurrenderPlayer1.Click += new System.EventHandler(this.buttonSurrenderPlayer1_Click);
             // 
+            // buttonOption1Player1
+            // 
+            this.buttonOption1Player1.Font = new System.Drawing.Font("Arial", 15F);
+            this.buttonOption1Player1.Location = new System.Drawing.Point(43, 262);
+            this.buttonOption1Player1.Name = "buttonOption1Player1";
+            this.buttonOption1Player1.Size = new System.Drawing.Size(250, 54);
+            this.buttonOption1Player1.TabIndex = 1;
+            this.buttonOption1Player1.Text = "Agua";
+            this.buttonOption1Player1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(299, 286);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "W";
+            // 
             // labelCurrentlyQuestion1
             // 
             this.labelCurrentlyQuestion1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -121,6 +198,15 @@
             this.labelCurrentlyQuestion1.Size = new System.Drawing.Size(82, 13);
             this.labelCurrentlyQuestion1.TabIndex = 12;
             this.labelCurrentlyQuestion1.Text = "Pregunta actual";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 286);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Q";
             // 
             // labelPoints1
             // 
@@ -170,42 +256,6 @@
             this.panel1.Size = new System.Drawing.Size(556, 170);
             this.panel1.TabIndex = 7;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(303, 368);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "S";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 368);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "A";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 286);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "W";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 286);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(15, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Q";
-            // 
             // labelQuestionPlayer1
             // 
             this.labelQuestionPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,47 +264,6 @@
             this.labelQuestionPlayer1.Size = new System.Drawing.Size(474, 137);
             this.labelQuestionPlayer1.TabIndex = 0;
             this.labelQuestionPlayer1.Text = "Texto por defecto";
-            // 
-            // buttonOption4Player1
-            // 
-            this.buttonOption4Player1.Font = new System.Drawing.Font("Arial", 15F);
-            this.buttonOption4Player1.Location = new System.Drawing.Point(329, 345);
-            this.buttonOption4Player1.Name = "buttonOption4Player1";
-            this.buttonOption4Player1.Size = new System.Drawing.Size(250, 52);
-            this.buttonOption4Player1.TabIndex = 4;
-            this.buttonOption4Player1.Text = "Psiquico";
-            this.buttonOption4Player1.UseVisualStyleBackColor = true;
-            this.buttonOption4Player1.Click += new System.EventHandler(this.buttonOption4Player1_Click);
-            // 
-            // buttonOption3Player1
-            // 
-            this.buttonOption3Player1.Font = new System.Drawing.Font("Arial", 15F);
-            this.buttonOption3Player1.Location = new System.Drawing.Point(44, 345);
-            this.buttonOption3Player1.Name = "buttonOption3Player1";
-            this.buttonOption3Player1.Size = new System.Drawing.Size(250, 52);
-            this.buttonOption3Player1.TabIndex = 3;
-            this.buttonOption3Player1.Text = "aire";
-            this.buttonOption3Player1.UseVisualStyleBackColor = true;
-            // 
-            // buttonOption2Player1
-            // 
-            this.buttonOption2Player1.Font = new System.Drawing.Font("Arial", 15F);
-            this.buttonOption2Player1.Location = new System.Drawing.Point(329, 262);
-            this.buttonOption2Player1.Name = "buttonOption2Player1";
-            this.buttonOption2Player1.Size = new System.Drawing.Size(250, 54);
-            this.buttonOption2Player1.TabIndex = 2;
-            this.buttonOption2Player1.Text = "fuego";
-            this.buttonOption2Player1.UseVisualStyleBackColor = true;
-            // 
-            // buttonOption1Player1
-            // 
-            this.buttonOption1Player1.Font = new System.Drawing.Font("Arial", 15F);
-            this.buttonOption1Player1.Location = new System.Drawing.Point(43, 262);
-            this.buttonOption1Player1.Name = "buttonOption1Player1";
-            this.buttonOption1Player1.Size = new System.Drawing.Size(250, 54);
-            this.buttonOption1Player1.TabIndex = 1;
-            this.buttonOption1Player1.Text = "Agua";
-            this.buttonOption1Player1.UseVisualStyleBackColor = true;
             // 
             // panelPlayer2
             // 
@@ -282,6 +291,34 @@
             this.panelPlayer2.Size = new System.Drawing.Size(617, 472);
             this.panelPlayer2.TabIndex = 1;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(293, 368);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "5";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(18, 368);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "4";
+            // 
             // labelCurrentlyQuestion2
             // 
             this.labelCurrentlyQuestion2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -292,6 +329,15 @@
             this.labelCurrentlyQuestion2.TabIndex = 14;
             this.labelCurrentlyQuestion2.Text = "Pregunta actual";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(293, 277);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "8";
+            // 
             // buttonSurrenderPlayer2
             // 
             this.buttonSurrenderPlayer2.Location = new System.Drawing.Point(500, 441);
@@ -301,6 +347,15 @@
             this.buttonSurrenderPlayer2.Text = "Rendirse";
             this.buttonSurrenderPlayer2.UseVisualStyleBackColor = true;
             this.buttonSurrenderPlayer2.Click += new System.EventHandler(this.buttonSurrenderPlayer2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 286);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "7";
             // 
             // label1
             // 
@@ -322,91 +377,6 @@
             this.labelPoints2.TabIndex = 11;
             this.labelPoints2.Text = "Puntuación actual";
             // 
-            // labelPlayer2
-            // 
-            this.labelPlayer2.AutoSize = true;
-            this.labelPlayer2.Location = new System.Drawing.Point(92, 10);
-            this.labelPlayer2.Name = "labelPlayer2";
-            this.labelPlayer2.Size = new System.Drawing.Size(77, 13);
-            this.labelPlayer2.TabIndex = 10;
-            this.labelPlayer2.Text = "Jugador actual";
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(246, 10);
-            this.progressBar2.Maximum = 1000;
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(329, 23);
-            this.progressBar2.Step = 100;
-            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar2.TabIndex = 9;
-            // 
-            // labelTime2
-            // 
-            this.labelTime2.AutoSize = true;
-            this.labelTime2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelTime2.Location = new System.Drawing.Point(242, 36);
-            this.labelTime2.Name = "labelTime2";
-            this.labelTime2.Size = new System.Drawing.Size(27, 20);
-            this.labelTime2.TabIndex = 8;
-            this.labelTime2.Text = "10";
-            this.labelTime2.Click += new System.EventHandler(this.labelTime2_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.labelQuestionPlayer2);
-            this.panel2.Location = new System.Drawing.Point(19, 79);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 170);
-            this.panel2.TabIndex = 7;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(293, 368);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "5";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 368);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "4";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(293, 277);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "8";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 286);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "7";
-            // 
-            // labelQuestionPlayer2
-            // 
-            this.labelQuestionPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuestionPlayer2.Location = new System.Drawing.Point(15, 12);
-            this.labelQuestionPlayer2.Name = "labelQuestionPlayer2";
-            this.labelQuestionPlayer2.Size = new System.Drawing.Size(523, 137);
-            this.labelQuestionPlayer2.TabIndex = 0;
-            this.labelQuestionPlayer2.Text = "Texto por defecto";
-            // 
             // buttonOption4Player2
             // 
             this.buttonOption4Player2.Font = new System.Drawing.Font("Arial", 15F);
@@ -416,6 +386,15 @@
             this.buttonOption4Player2.TabIndex = 4;
             this.buttonOption4Player2.Text = "Psiquico";
             this.buttonOption4Player2.UseVisualStyleBackColor = true;
+            // 
+            // labelPlayer2
+            // 
+            this.labelPlayer2.AutoSize = true;
+            this.labelPlayer2.Location = new System.Drawing.Point(92, 10);
+            this.labelPlayer2.Name = "labelPlayer2";
+            this.labelPlayer2.Size = new System.Drawing.Size(77, 13);
+            this.labelPlayer2.TabIndex = 10;
+            this.labelPlayer2.Text = "Jugador actual";
             // 
             // buttonOption3Player2
             // 
@@ -427,6 +406,16 @@
             this.buttonOption3Player2.Text = "aire";
             this.buttonOption3Player2.UseVisualStyleBackColor = true;
             // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(246, 10);
+            this.progressBar2.Maximum = 1000;
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(329, 23);
+            this.progressBar2.Step = 100;
+            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar2.TabIndex = 9;
+            // 
             // buttonOption2Player2
             // 
             this.buttonOption2Player2.Font = new System.Drawing.Font("Arial", 15F);
@@ -437,6 +426,16 @@
             this.buttonOption2Player2.Text = "fuego";
             this.buttonOption2Player2.UseVisualStyleBackColor = true;
             // 
+            // labelTime2
+            // 
+            this.labelTime2.AutoSize = true;
+            this.labelTime2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelTime2.Location = new System.Drawing.Point(242, 36);
+            this.labelTime2.Name = "labelTime2";
+            this.labelTime2.Size = new System.Drawing.Size(27, 20);
+            this.labelTime2.TabIndex = 8;
+            this.labelTime2.Text = "10";
+            // 
             // buttonOption1Player2
             // 
             this.buttonOption1Player2.Font = new System.Drawing.Font("Arial", 15F);
@@ -446,7 +445,24 @@
             this.buttonOption1Player2.TabIndex = 1;
             this.buttonOption1Player2.Text = "Agua";
             this.buttonOption1Player2.UseVisualStyleBackColor = true;
-            this.buttonOption1Player2.Click += new System.EventHandler(this.buttonOption1Player2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.labelQuestionPlayer2);
+            this.panel2.Location = new System.Drawing.Point(19, 79);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(556, 170);
+            this.panel2.TabIndex = 7;
+            // 
+            // labelQuestionPlayer2
+            // 
+            this.labelQuestionPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuestionPlayer2.Location = new System.Drawing.Point(15, 12);
+            this.labelQuestionPlayer2.Name = "labelQuestionPlayer2";
+            this.labelQuestionPlayer2.Size = new System.Drawing.Size(523, 137);
+            this.labelQuestionPlayer2.TabIndex = 0;
+            this.labelQuestionPlayer2.Text = "Texto por defecto";
             // 
             // timer1
             // 
@@ -459,26 +475,6 @@
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(19, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
             // 
             // FormGameTwoPlayers
             // 
@@ -494,12 +490,12 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGameTwoPlayers_KeyDown);
             this.panelPlayer1.ResumeLayout(false);
             this.panelPlayer1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panelPlayer2.ResumeLayout(false);
             this.panelPlayer2.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -134,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,6 +161,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\1Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\2Players.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\59695040_375459249738381_985732669885120512_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\BlueBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\Clasificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Diseño\Salir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

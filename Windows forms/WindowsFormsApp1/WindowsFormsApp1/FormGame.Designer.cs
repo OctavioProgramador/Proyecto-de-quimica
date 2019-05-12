@@ -60,16 +60,17 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.labelQuestion);
             this.panel1.Location = new System.Drawing.Point(12, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 180);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonOption4
             // 
+            this.buttonOption4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption4.BackgroundImage")));
+            this.buttonOption4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption4.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption4.Location = new System.Drawing.Point(410, 364);
             this.buttonOption4.Name = "buttonOption4";
@@ -81,6 +82,8 @@
             // 
             // buttonOption3
             // 
+            this.buttonOption3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption3.BackgroundImage")));
+            this.buttonOption3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption3.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption3.Location = new System.Drawing.Point(12, 364);
             this.buttonOption3.Name = "buttonOption3";
@@ -92,6 +95,8 @@
             // 
             // buttonOption2
             // 
+            this.buttonOption2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption2.BackgroundImage")));
+            this.buttonOption2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption2.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption2.Location = new System.Drawing.Point(410, 267);
             this.buttonOption2.Name = "buttonOption2";
@@ -103,6 +108,8 @@
             // 
             // buttonOption1
             // 
+            this.buttonOption1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption1.BackgroundImage")));
+            this.buttonOption1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption1.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption1.Location = new System.Drawing.Point(12, 267);
             this.buttonOption1.Name = "buttonOption1";
@@ -121,10 +128,12 @@
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelTime.BackColor = System.Drawing.Color.Transparent;
+            this.labelTime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTime.ForeColor = System.Drawing.Color.White;
             this.labelTime.Location = new System.Drawing.Point(267, 37);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(27, 20);
+            this.labelTime.Size = new System.Drawing.Size(22, 16);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "10";
             // 
@@ -137,14 +146,16 @@
             this.progressBar1.Step = 100;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // labelPlayer
             // 
             this.labelPlayer.AutoSize = true;
+            this.labelPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.labelPlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlayer.ForeColor = System.Drawing.Color.White;
             this.labelPlayer.Location = new System.Drawing.Point(79, 9);
             this.labelPlayer.Name = "labelPlayer";
-            this.labelPlayer.Size = new System.Drawing.Size(77, 13);
+            this.labelPlayer.Size = new System.Drawing.Size(103, 16);
             this.labelPlayer.TabIndex = 3;
             this.labelPlayer.Text = "Jugador actual";
             // 
@@ -152,9 +163,12 @@
             // 
             this.labelPoints.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPoints.AutoSize = true;
+            this.labelPoints.BackColor = System.Drawing.Color.Transparent;
+            this.labelPoints.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPoints.ForeColor = System.Drawing.Color.White;
             this.labelPoints.Location = new System.Drawing.Point(79, 37);
             this.labelPoints.Name = "labelPoints";
-            this.labelPoints.Size = new System.Drawing.Size(93, 13);
+            this.labelPoints.Size = new System.Drawing.Size(123, 16);
             this.labelPoints.TabIndex = 4;
             this.labelPoints.Text = "Puntuación actual";
             // 
@@ -162,24 +176,31 @@
             // 
             this.labelCurrentlyQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCurrentlyQuestion.AutoSize = true;
+            this.labelCurrentlyQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.labelCurrentlyQuestion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrentlyQuestion.ForeColor = System.Drawing.Color.White;
             this.labelCurrentlyQuestion.Location = new System.Drawing.Point(606, 12);
             this.labelCurrentlyQuestion.Name = "labelCurrentlyQuestion";
-            this.labelCurrentlyQuestion.Size = new System.Drawing.Size(82, 13);
+            this.labelCurrentlyQuestion.Size = new System.Drawing.Size(109, 16);
             this.labelCurrentlyQuestion.TabIndex = 5;
             this.labelCurrentlyQuestion.Text = "Pregunta actual";
             // 
             // buttonSurrender
             // 
+            this.buttonSurrender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonSurrender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSurrender.ForeColor = System.Drawing.Color.Black;
             this.buttonSurrender.Location = new System.Drawing.Point(713, 471);
             this.buttonSurrender.Name = "buttonSurrender";
             this.buttonSurrender.Size = new System.Drawing.Size(75, 23);
             this.buttonSurrender.TabIndex = 6;
             this.buttonSurrender.Text = "Rendirse";
-            this.buttonSurrender.UseVisualStyleBackColor = true;
+            this.buttonSurrender.UseVisualStyleBackColor = false;
             this.buttonSurrender.Click += new System.EventHandler(this.buttonSurrender_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 7);
@@ -194,6 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.BlueBackground;
             this.ClientSize = new System.Drawing.Size(805, 503);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonSurrender);

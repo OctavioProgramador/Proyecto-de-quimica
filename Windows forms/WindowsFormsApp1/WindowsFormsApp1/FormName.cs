@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
             {
                 if ((textBoxNamePlayer1.Text).Length != 0)
                 {
+
                     FormGame formGame = new FormGame(textBoxNamePlayer1.Text);
                     this.Close();
                     formGame.Show();
@@ -64,6 +65,7 @@ namespace WindowsFormsApp1
         {
             if (numPlayers == 1)
             {
+                label1.Text = "Ingresa tu nombre!";
                 label2.Visible = false;
                 textBoxNamePlayer2.Visible = false;
             }
