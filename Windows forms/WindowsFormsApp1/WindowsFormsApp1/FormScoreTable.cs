@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Text;
 
 namespace WindowsFormsApp1
 {    
@@ -31,6 +32,8 @@ namespace WindowsFormsApp1
                 labelDosJugadores6,labelDosJugadores7,labelDosJugadores8,labelDosJugadores9,labelDosJugadores10,
                 labelDosJugadores11,labelDosJugadores12,labelDosJugadores13,labelDosJugadores14,labelDosJugadores15,
             };
+            CustomiseFont(labelListSinglePlayer);
+            CustomiseFont(labelListSinglePlayer2);
             SetScores();
             SetScores2();
         }
@@ -63,6 +66,16 @@ namespace WindowsFormsApp1
         private void tabPageScoresTwoPlayers_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CustomiseFont(List<Label> texts )
+        {
+            PrivateFontCollection font = new PrivateFontCollection();
+            font.AddFontFile("font.ttf");
+            foreach (Label text in texts)
+            {
+                text.Font = new Font(font.Families[0], 15, FontStyle.Bold);
+            }
         }
     }
 }

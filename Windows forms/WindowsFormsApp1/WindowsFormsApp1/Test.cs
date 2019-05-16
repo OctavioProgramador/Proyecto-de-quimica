@@ -17,11 +17,16 @@ namespace WindowsFormsApp1
         //Constructor
         public Test()
         {
-            rute = Directory.GetCurrentDirectory() + @"\questions.xml";
+            rute = Directory.GetCurrentDirectory() + @"\questions2.xml";
             EnterQuestions();
             //SortTheQuestionsRandomly();
         }
 
+        //Methods
+        public void RemoveQuestion(int index)
+        {
+            questions.Remove(questions[index]);
+        }
         public string AsingPlayerName()
         {
             System.Console.WriteLine("Write your name");

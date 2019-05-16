@@ -115,6 +115,9 @@ namespace WindowsFormsApp1
             labelCurrentlyQuestion.Text = "Preguntas respondidas: "+NumberOfQuestions.ToString();
             labelPoints.Text = "Puntos totales: " + puntotal.ToString();
             labelTime.Text = "Tiempo restante: " + (conteo.ToString());
+            //Este método quita la pregunta que acaba de realizar de la lista de preguntas
+            newTest.RemoveQuestion(randomIndex);
+
         }   
 
         private void CorroborarRespuesta(bool condiciónLogica)

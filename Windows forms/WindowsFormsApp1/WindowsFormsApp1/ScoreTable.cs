@@ -19,11 +19,13 @@ namespace WindowsFormsApp1
         {
             if(modePlayer == 1)
             {
-                rute = Directory.GetCurrentDirectory() + @"\playerScore1PLayer.xml";
+                //rute = Directory.GetCurrentDirectory() + @"\playerScore1PLayer.xml";
+                rute = @".\playerScore1PLayer.xml";
             }
             else if(modePlayer == 2)
             {
-                rute = Directory.GetCurrentDirectory() + @"\playerScore2PLayer.xml";
+                //rute = Directory.GetCurrentDirectory() + @"\playerScore2PLayer.xml";
+                rute = @".\playerScore2PLayer.xml";
             }          
             record = new List<Player>();
             if (File.Exists(rute))

@@ -215,8 +215,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.BlueBackground;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.BlueBackground1;
             this.ClientSize = new System.Drawing.Size(805, 503);
+            this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonSurrender);
             this.Controls.Add(this.buttonOption4);
@@ -229,9 +230,10 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Juego quimica";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

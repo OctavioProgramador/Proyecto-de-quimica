@@ -165,17 +165,19 @@ namespace WindowsFormsApp1
                 int randomIndex = rnd.Next(0, newTestPlayer1.questions.Count);
 
                 labelQuestionPlayer1.Text = newTestPlayer1.questions[randomIndex].QuestionText;
-                buttonOption1Player1.Text = newTestPlayer1.questions[randomIndex].GetPosibleAnswer(0);
-                buttonOption2Player1.Text = newTestPlayer1.questions[randomIndex].GetPosibleAnswer(1);
-                buttonOption3Player1.Text = newTestPlayer1.questions[randomIndex].GetPosibleAnswer(2);
-                buttonOption4Player1.Text = newTestPlayer1.questions[randomIndex].GetPosibleAnswer(3);
+                buttonOption1Player1.Text = "Q.-" + newTestPlayer1.questions[randomIndex].GetPosibleAnswer(0);
+                buttonOption2Player1.Text = "W.-" + newTestPlayer1.questions[randomIndex].GetPosibleAnswer(1);
+                buttonOption3Player1.Text = "A.-" + newTestPlayer1.questions[randomIndex].GetPosibleAnswer(2);
+                buttonOption4Player1.Text = "S.-" + newTestPlayer1.questions[randomIndex].GetPosibleAnswer(3);
                 TimeLeftPlayer1 = 11;
 
                 positionPlayer1 = randomIndex;
-
-                labelCurrentlyQuestion1.Text = "Preguntas respondidas: " + NumberOfQuestionsPlayer1.ToString();
+                //MessageBox.Show(positionPlayer1.ToString());
+               // labelCurrentlyQuestion1.Text = "Preguntas respondidas: " + NumberOfQuestionsPlayer1.ToString();
                 labelPoints1.Text = "Puntos totales: " + totalPointsPlayer1.ToString();
                 labelTime1.Text = "Tiempo restante: " + (TimeLeftPlayer1.ToString());
+                //Con esto evitamos que vuelva a aparecer la pregunta eliminandola de la clase test
+                
             }         
         }
 
@@ -189,16 +191,18 @@ namespace WindowsFormsApp1
                 int randomIndex = rnd.Next(0, newTestPlayer2.questions.Count);
 
                 labelQuestionPlayer2.Text = newTestPlayer2.questions[randomIndex].QuestionText;
-                buttonOption1Player2.Text = newTestPlayer2.questions[randomIndex].GetPosibleAnswer(0);
-                buttonOption2Player2.Text = newTestPlayer2.questions[randomIndex].GetPosibleAnswer(1);
-                buttonOption3Player2.Text = newTestPlayer2.questions[randomIndex].GetPosibleAnswer(2);
-                buttonOption4Player2.Text = newTestPlayer2.questions[randomIndex].GetPosibleAnswer(3);
+                buttonOption1Player2.Text = "7.-" + newTestPlayer2.questions[randomIndex].GetPosibleAnswer(0);
+                buttonOption2Player2.Text = "8.-" + newTestPlayer2.questions[randomIndex].GetPosibleAnswer(1);
+                buttonOption3Player2.Text = "4.-" + newTestPlayer2.questions[randomIndex].GetPosibleAnswer(2);
+                buttonOption4Player2.Text = "5.-" + newTestPlayer2.questions[randomIndex].GetPosibleAnswer(3);
                 timeLeftPlayer2 = 11;
                 positionPlayer2 = randomIndex;
-
-                labelCurrentlyQuestion2.Text = "Preguntas respondidas: " + NumberOfQuestionsPlayer2.ToString();
+                //MessageBox.Show(positionPlayer2.ToString());
+                //labelCurrentlyQuestion2.Text = "Preguntas respondidas: " + NumberOfQuestionsPlayer2.ToString();
                 labelPoints2.Text = "Puntos totales: " + totalPointsPlayer2.ToString();
                 labelTime2.Text = "Tiempo restante: " + (timeLeftPlayer2.ToString());
+                //Con esto evitamos que vuelva a aparecer la pregunta eliminandola de la clase test
+                //newTestPlayer2.RemoveQuestion(randomIndex);
             }           
         }
 
@@ -249,18 +253,22 @@ namespace WindowsFormsApp1
             }
             if (player == 1)
             {
+                newTestPlayer1.RemoveQuestion(positionPlayer1);
                 NumberOfQuestionsPlayer1++;
                 WriteQuestionPlayer1();
             }
             if (player == 2)
             {
+                newTestPlayer2.RemoveQuestion(positionPlayer2);
                 NumberOfQuestionsPlayer2++;
                 WriteQuestionPlayer2();            
             }
+            
         }
 
         void CorroborateTotalofQuestionsPlayer1()
         {
+
             if (NumberOfQuestionsPlayer1 >= 15)
             {
                 Player1Finished();
@@ -269,6 +277,7 @@ namespace WindowsFormsApp1
 
         void CorroborateTotalofQuestionsPlayer2()
         {
+            //newTestPlayer2.RemoveQuestion(positionPlayer2);
             if (NumberOfQuestionsPlayer2 >= 15)
             {
                 Player2Finished();
