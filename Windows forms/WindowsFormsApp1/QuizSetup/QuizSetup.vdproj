@@ -15,7 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_64712432FD034767AE3B019779CEF1C0"
+        "MsmKey" = "8:_146D139FB8174C7C9A112907F955DCB7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1F390ACAD6F84377A86C3E722DCA3DD0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_266EDFBEFEA6413A855C4F7A41902E2E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -33,26 +45,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8142AE4992C84EE9BBE145C83154DE36"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BD239E4498D142BAAFB6D7FCCBF724F9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D9A4721550AB4DCC8FEE5CF492B512E4"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F20173B3D5AC04DF2336CDFF0AD9C053"
-        "OwnerKey" = "8:_64712432FD034767AE3B019779CEF1C0"
+        "OwnerKey" = "8:_146D139FB8174C7C9A112907F955DCB7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF74E2A863FF45DEAE2D4BC60FDC9859"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_64712432FD034767AE3B019779CEF1C0"
+        "OwnerKey" = "8:_146D139FB8174C7C9A112907F955DCB7"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -85,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -101,6 +109,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -130,6 +146,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1F390ACAD6F84377A86C3E722DCA3DD0"
+            {
+            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\playerScore1PLayer.xml"
+            "TargetName" = "8:playerScore1PLayer.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_266EDFBEFEA6413A855C4F7A41902E2E"
+            {
+            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\playerScore2PLayer.xml"
+            "TargetName" = "8:playerScore2PLayer.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_75E4DCBFE601499281FFDAC36AEEFD4A"
             {
             "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Release\\font.ttf"
@@ -154,66 +210,6 @@
             {
             "SourcePath" = "8:..\\..\\..\\molecule_icon-icons.com_56341_56341.ico"
             "TargetName" = "8:molecule_icon-icons.com_56341_56341.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8142AE4992C84EE9BBE145C83154DE36"
-            {
-            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\playerScore2PLayer.xml"
-            "TargetName" = "8:playerScore2PLayer.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BD239E4498D142BAAFB6D7FCCBF724F9"
-            {
-            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\questions2.xml"
-            "TargetName" = "8:questions2.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D9A4721550AB4DCC8FEE5CF492B512E4"
-            {
-            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\playerScore1PLayer.xml"
-            "TargetName" = "8:playerScore1PLayer.xml"
             "Tag" = "8:"
             "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
             "Condition" = "8:"
@@ -259,6 +255,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FF74E2A863FF45DEAE2D4BC60FDC9859"
+            {
+            "SourcePath" = "8:..\\WindowsFormsApp1\\bin\\Debug\\questions2.xml"
+            "TargetName" = "8:questions2.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -446,7 +462,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_64712432FD034767AE3B019779CEF1C0"
+            "Target" = "8:_146D139FB8174C7C9A112907F955DCB7"
             "Folder" = "8:_E0FED2BB6429401D94EC2D8AD8DBA505"
             "WorkingFolder" = "8:_74868202F1894850A6280CEC1B47F7F9"
             "Icon" = "8:_7938DC45AC9048369CF57044BB3B3FEC"
@@ -460,7 +476,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_64712432FD034767AE3B019779CEF1C0"
+            "Target" = "8:_146D139FB8174C7C9A112907F955DCB7"
             "Folder" = "8:_E1AC354A4E6A4CFC84B1AC8FD13D0F53"
             "WorkingFolder" = "8:_74868202F1894850A6280CEC1B47F7F9"
             "Icon" = "8:_7938DC45AC9048369CF57044BB3B3FEC"
@@ -865,9 +881,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_64712432FD034767AE3B019779CEF1C0"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_146D139FB8174C7C9A112907F955DCB7"
             {
-            "SourcePath" = "8:..\\WindowsFormsApp1\\obj\\Release\\WindowsFormsApp1.exe"
+            "SourcePath" = "8:..\\WindowsFormsApp1\\obj\\Debug\\WindowsFormsApp1.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_74868202F1894850A6280CEC1B47F7F9"
@@ -885,7 +901,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
+            "OutputConfiguration" = "8:Release|Any CPU"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{7A3CB536-39D6-4875-9D96-B0AEE93E3995}"
             "ShowKeyOutput" = "11:TRUE"
