@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
 
         public bool Reply(int answer)
         {
-            return (posibleAnswer[answer - 1].Equals(CorrectAnswer));
+            return (posibleAnswer[answer-1].Equals(CorrectAnswer));
         }
 
         public void SortTheAnswersRandomly()

@@ -32,8 +32,8 @@ namespace WindowsFormsApp1
                 labelDosJugadores6,labelDosJugadores7,labelDosJugadores8,labelDosJugadores9,labelDosJugadores10,
                 labelDosJugadores11,labelDosJugadores12,labelDosJugadores13,labelDosJugadores14,labelDosJugadores15,
             };
-            CustomiseFont(labelListSinglePlayer);
-            CustomiseFont(labelListSinglePlayer2);
+            //CustomiseFont(labelListSinglePlayer);
+            //CustomiseFont(labelListSinglePlayer2);
             SetScores();
             SetScores2();
         }

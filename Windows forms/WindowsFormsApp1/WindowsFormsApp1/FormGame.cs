@@ -39,7 +39,9 @@ namespace WindowsFormsApp1
         #region Handlers 
         private void button1_Click(object sender, EventArgs e)
         {
-            CorroborarRespuesta(newTest.questions[posicion].Reply( ( ( Button )sender ).TabIndex ) );
+            int index = ((Button)sender).TabIndex;
+            bool boolean = newTest.questions[posicion].Reply(index);
+            CorroborarRespuesta(boolean);
             CorroborateTotalofQuestions();
         }       
 
@@ -102,8 +104,15 @@ namespace WindowsFormsApp1
         public void WriteQuestion() {
             progressBar1.Value = 0;
             Random rnd = new Random();
-            
-            int randomIndex = rnd.Next(0, newTest.questions.Count);
+            int randomIndex;
+            if (newTest.questions.Count != 0)
+            {
+                 randomIndex = rnd.Next(0, (newTest.questions.Count - 1));
+            }
+            else
+            {
+                 randomIndex = 0;
+            }
             labelQuestion.Text = newTest.questions[randomIndex].QuestionText;
             buttonOption1.Text = newTest.questions[randomIndex].GetPosibleAnswer(0);
             buttonOption2.Text = newTest.questions[randomIndex].GetPosibleAnswer(1);
