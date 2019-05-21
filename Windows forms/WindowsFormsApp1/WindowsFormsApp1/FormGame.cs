@@ -105,20 +105,22 @@ namespace WindowsFormsApp1
             progressBar1.Value = 0;
             Random rnd = new Random();
             int randomIndex;
-            if (newTest.questions.Count != 0)
+            /*if (newTest.questions.Count != 0)
             {
                  randomIndex = rnd.Next(0, (newTest.questions.Count - 1));
             }
             else
             {
                  randomIndex = 0;
-            }
+            }*/
+            randomIndex = rnd.Next(0,newTest.questions.Count-1);
             labelQuestion.Text = newTest.questions[randomIndex].QuestionText;
             buttonOption1.Text = newTest.questions[randomIndex].GetPosibleAnswer(0);
             buttonOption2.Text = newTest.questions[randomIndex].GetPosibleAnswer(1);
             buttonOption3.Text = newTest.questions[randomIndex].GetPosibleAnswer(2);
             buttonOption4.Text = newTest.questions[randomIndex].GetPosibleAnswer(3);
             conteo = 11;
+
             posicion = randomIndex;
 
             labelCurrentlyQuestion.Text = "Preguntas respondidas: "+NumberOfQuestions.ToString();

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>66</x>
+      <y>33</y>
+      <w>528</w>
+      <h>418</h>
+    </coordinates>
+    <panel_attributes>Question: ISerializable
+--
++stringQuestionText: string	
++CorrectAnswer: string
++WrongAnswer1: string
++WrongAnswer2: string
++WrongAnswer3: string
+-posibleAnswer: string[]
+
+--
++Question(questionText: string, 
+correctAnswer: string,
+wrongAnswer1: string, 
+wrongAnswer2: string, 
+wrongAnswer3: string)
++Question()
+
++Reply(answer: int): bool
++GetPosibleAnswer(indexOfAnswer: int): string
++SortTheAnswersRandomly(): void
++CreatePosibleAnswers():void
+
++GetObjectData(info: SerializationInfo, context:StreamingContext): void
++Question(info: SerializationInfo, context:StreamingContext)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>33</y>
+      <w>528</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>Player : IComparable, ISerializable
+--
++Score: int
++Name: string
+--
++Player(name: string, score: string)
++Player()
+
++CompareTo(obj: object):int
++Override ToString(): string
+
++GetObjectData(info: SerializationInfo, context:StreamingContext): void
++Player(info: SerializationInfo, context:StreamingContext)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>275</y>
+      <w>286</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>Test
+--
++rute: string
++questions: List&lt;Question&gt;
+--
++Test()
++RemoveQuestion(index: int): void
++AsingPlayerName(): string
++EnterQuestions(): void
++Deserealize(): void
++Serialize(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

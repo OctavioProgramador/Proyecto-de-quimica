@@ -9,19 +9,19 @@ namespace WindowsFormsApp1
     [Serializable()]
     public class Player : IComparable, ISerializable
     {
-        public String Name;
-        public int Score;
+        public String Name { get; set; }
+        public int Score { get; set; }
+
+        //Constructors
 
         public Player(string name, int score)
         {
             Name = name;
             Score = score;
         }
+        public Player(){}
 
-        public Player()
-        {
-
-        }
+        //Methods
 
         public int CompareTo(object obj)
         {

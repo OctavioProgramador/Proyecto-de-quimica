@@ -83,7 +83,7 @@
             // buttonReturn
             // 
             this.buttonReturn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonReturn.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._59695040_375459249738381_985732669885120512_n;
+            this.buttonReturn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonReturn.BackgroundImage")));
             this.buttonReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReturn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,7 +98,7 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSubmit.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._59695040_375459249738381_985732669885120512_n;
+            this.buttonSubmit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSubmit.BackgroundImage")));
             this.buttonSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSubmit.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

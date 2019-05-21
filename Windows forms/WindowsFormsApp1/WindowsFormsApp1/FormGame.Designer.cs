@@ -69,7 +69,7 @@
             // 
             // buttonOption4
             // 
-            this.buttonOption4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption4.BackgroundImage")));
+            this.buttonOption4.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption4.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption4.Location = new System.Drawing.Point(410, 364);
@@ -82,7 +82,7 @@
             // 
             // buttonOption3
             // 
-            this.buttonOption3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption3.BackgroundImage")));
+            this.buttonOption3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption3.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption3.Location = new System.Drawing.Point(12, 364);
@@ -95,7 +95,7 @@
             // 
             // buttonOption2
             // 
-            this.buttonOption2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption2.BackgroundImage")));
+            this.buttonOption2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption2.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption2.Location = new System.Drawing.Point(410, 267);
@@ -108,7 +108,7 @@
             // 
             // buttonOption1
             // 
-            this.buttonOption1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption1.BackgroundImage")));
+            this.buttonOption1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption1.Font = new System.Drawing.Font("Arial", 15F);
             this.buttonOption1.Location = new System.Drawing.Point(12, 267);

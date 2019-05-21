@@ -10,11 +10,13 @@ using System.IO;
 
 namespace WindowsFormsApp1
 {
-    [Serializable()]
     class ScoreTable
     {
         public string rute;
         private List<Player> record;
+
+        //Constructors
+
         public ScoreTable(int modePlayer)
         {
             if(modePlayer == 1)
@@ -33,6 +35,9 @@ namespace WindowsFormsApp1
                 Deserialize();
             }
         }
+
+        //Methods
+
         public List<Player> GetRecord()
         {
             return record;
@@ -46,7 +51,6 @@ namespace WindowsFormsApp1
             }
 
         }
-
         public void AddPuntuation(Player newPuntuation)
         {
 
@@ -58,8 +62,7 @@ namespace WindowsFormsApp1
                 record.Remove(record[15]);
             }
             Serialize();
-        }
-
+        }    
         public void Deserialize()
         {
             using (FileStream fs = File.OpenRead(rute))
@@ -68,7 +71,6 @@ namespace WindowsFormsApp1
                 record = (List<Player>)serializer.Deserialize(fs);
             }
         }
-
         public void Serialize()
         {
             using (TextWriter fs = new StreamWriter(rute))
@@ -77,6 +79,5 @@ namespace WindowsFormsApp1
                 serializer.Serialize(fs, record);
             }
         }
-
     }
 }

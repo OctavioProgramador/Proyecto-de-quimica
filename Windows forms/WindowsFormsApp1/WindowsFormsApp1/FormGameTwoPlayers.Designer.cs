@@ -384,7 +384,7 @@
             // 
             // buttonOption4Player2
             // 
-            this.buttonOption4Player2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption4Player2.BackgroundImage")));
+            this.buttonOption4Player2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption4Player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption4Player2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOption4Player2.Font = new System.Drawing.Font("Arial", 15F);
@@ -409,7 +409,7 @@
             // 
             // buttonOption3Player2
             // 
-            this.buttonOption3Player2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOption3Player2.BackgroundImage")));
+            this.buttonOption3Player2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.GreenBottom250x54;
             this.buttonOption3Player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonOption3Player2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOption3Player2.Font = new System.Drawing.Font("Arial", 15F);
