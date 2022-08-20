@@ -11,32 +11,90 @@ namespace Questionary2
 {
     class Test
     {
-        //Fields
         public string rute;
         public Question[] questions;
+        private int numberOfQuestions;
+        Player player;
  
-        //Constructor
         public Test()
         {
+            player = new Player();
             rute = Directory.GetCurrentDirectory()+@"\questions.xml";
-            EnterQuestions();
+            InsertQuestionAndAnswers();
             SortTheQuestionsRandomly();
         }
 
-        //Methods
-        public Player Start()
+        public void InsertQuestionAndAnswers()
         {
-            string playerName="";
-            int playerPoints=0;
+            if (File.Exists(rute))
+            {
+                Deserialize();
+            }
+            else
+            {
+                questions = new Question[]
+                {
+                    new Question("2+2","4","2","3","5"),
+                    new Question("2*2","4","2","3","5"),
+                    new Question("2-2","0","2","3","5")
+                };
+                Serialize();
+            }
+            foreach (Question question in questions)
+            {
+                question.CreatePosibleAnswer();
+            }
+        }
+
+        public void Deserialize()
+        {
+            using (FileStream fileStream = File.OpenRead(rute))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Question[]));
+                questions = (Question[])serializer.Deserialize(fileStream);
+            }
+        }
+
+        public void Serialize()
+        {
+            using (Stream fileStream = new FileStream(rute, FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Question[]));
+                serializer.Serialize(fileStream, questions);
+            }
+        }
+
+        public void SortTheQuestionsRandomly()
+        {
+            int[] indexArray = new int[numberOfQuestions];
+            FillArrayWithRandomIndex(indexArray);
+            Array.Sort(indexArray, questions);
+        }
+
+        private void FillArrayWithRandomIndex(int [] array)
+        {
+            Random rndIndex = new Random();
+            for (int i = 0; i < numberOfQuestions - 1; i++)
+            {
+                array[i] = rndIndex.Next(numberOfQuestions);
+            }
+        }
+
+        public void Start()
+        {
+            string playerName = "";
+            int playerPoints = 0;
             playerName = AsingPlayerName();
             playerPoints  = DoQuestions();
-            return new Player(playerName,playerPoints);
+            player = new Player(playerName,playerPoints);
         }
+
         public string AsingPlayerName()
         {
-            System.Console.WriteLine("Write your name");
+            Console.WriteLine("Write your name");
             return Console.ReadLine();
         }
+
         public int DoQuestions()
         {
             int puntuation = 0;
@@ -47,55 +105,10 @@ namespace Questionary2
             }
             return puntuation;
         }
-        public void SortTheQuestionsRandomly()
-        {
-            Random rndIndex  = new Random();
-            int[] indexArray = new int[questions.Length];
-            for(int i = 0;i<questions.Length-1;i++)
-            {
-                indexArray[i] = rndIndex.Next(3);
-            }
-            Array.Sort(indexArray,questions);
 
-        }
-        public void EnterQuestions()
+        public Player getPlayer()
         {
-            if(File.Exists(rute))
-            {
-                Deserialize();
-            }
-            else
-            {                
-                questions = new Question[]
-                {
-                    new Question("2+2","4","2","3","5"),
-                    new Question("2*2","4","2","3","5"),
-                    new Question("2-2","0","2","3","5")
-                };
-                Serialize();
-            }
-           foreach(Question q in questions)
-            {
-                q.CreatePosibleAnswer();
-            }
-        }
-
-        //Deserealize
-        public void Deserialize()
-        {
-            using (FileStream fs2 = File.OpenRead(rute))
-            {  
-                XmlSerializer serializer = new XmlSerializer(typeof(Question[]));
-                questions = (Question[])serializer.Deserialize(fs2);
-            }
-        }
-         public void Serialize()
-        {
-            using (Stream fs = new FileStream(rute,FileMode.Create,FileAccess.Write, FileShare.None))
-            {  
-                XmlSerializer serializer = new XmlSerializer(typeof(Question[]));
-                serializer.Serialize(fs, questions);
-            }
+            return player;
         }
     }
     

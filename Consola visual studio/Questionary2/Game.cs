@@ -26,7 +26,8 @@ namespace Questionary2
             {
                 case 1:
                     Console.Clear();
-                    scoreTable.AddPuntuation(test.Start());
+                    test.Start();
+                    scoreTable.AddPuntuation(test.getPlayer());
                     Console.ReadLine();
                     Console.Clear();
                     Start();
